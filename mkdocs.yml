@@ -1,0 +1,42 @@
+site_name: XIAO ESP32 开发文档
+site_description: PlatformIO + ESP-IDF 项目、固件、引脚及外围设备文档
+repo_name: xiao_esp32
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.highlight
+
+nav:
+  - 首页: index.md
+  - 快速开始: getting-started.md
+  - 硬件:
+      - XIAO 型号: hardware/boards.md
+      - 引脚定义: hardware/pinout.md
+  - 固件:
+      - 工程结构: firmware/architecture.md
+      - 编译与烧录: firmware/build-flash.md
+  - 外围设备: peripherals/index.md
+  - 调试: debugging/index.md
+  - 资料索引: reference/resources.md
+
+exclude_docs: |
+  peripherals/_template.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
