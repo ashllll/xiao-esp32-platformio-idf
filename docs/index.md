@@ -20,7 +20,7 @@
 - 可复用驱动放在 `components/<device>/`，公共 API 放在组件的 `include/` 目录。
 - 每个真实外设都有独立文档页，至少包含电气、接线、总线、依赖、验证、冲突和来源。
 - 机密信息、串口路径和机器专属配置不提交到仓库。
-- `docs/` 只保留经过复核的操作说明；PDF、CAD、镜像和历史工程留在 `/Users/llll/ESP32_资料整理`。
+- `docs/` 只保留经过复核的操作说明；PDF、CAD、镜像和历史工程留在 `XIAO_ESP32_REFERENCE_ROOT`（默认 `~/ESP32_资料整理`）指向的外部资料库。
 
 ```mermaid
 flowchart LR

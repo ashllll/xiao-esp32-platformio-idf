@@ -15,9 +15,12 @@ pio --version
 克隆或复制工程后，先进入根目录：
 
 ```bash
-cd /Users/llll/code/esp/xiao_esp32
+export XIAO_ESP32_PROJECT_ROOT="${XIAO_ESP32_PROJECT_ROOT:-$HOME/code/esp/xiao_esp32}"
+cd "$XIAO_ESP32_PROJECT_ROOT"
 pio system info
 ```
+
+也可直接进入任意克隆或复制出来的工程根目录；上述环境变量只是可选的跨终端便捷入口。
 
 `pio system info` 的平台应包含 `darwin_arm64`。
 

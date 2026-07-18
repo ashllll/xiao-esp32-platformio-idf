@@ -10,7 +10,7 @@
 | 板级宏和 D0–D10 映射 | `include/xiao_pins.h` |
 | 组件公共 API | `components/<device>/include/` |
 | 依赖和配置 | `platformio.ini`、`sdkconfig.*`、`idf_component.yml` |
-| 大型 PDF、CAD、图片镜像、历史工程 | `/Users/llll/ESP32_资料整理` |
+| 大型 PDF、CAD、图片镜像、历史工程 | `XIAO_ESP32_REFERENCE_ROOT`（默认 `~/ESP32_资料整理`） |
 | 版本变化 | `CHANGELOG.md` 和发布说明 |
 
 项目文档不复制完整官方站点，也不把 `.platformio` 缓存当资料源提交。

@@ -72,7 +72,7 @@ components/<device>/
 - 新外设：复制 `docs/peripherals/_template.md` 并加入导航。
 - 引脚或板型事实：附 Seeed 官方链接和核对日期。
 - ESP-IDF API：链接当前项目所用版本或 stable 文档。
-- 大型 PDF/CAD：归档到 `/Users/llll/ESP32_资料整理`，项目只写索引。
+- 大型 PDF/CAD：归档到 `XIAO_ESP32_REFERENCE_ROOT`（默认 `~/ESP32_资料整理`），项目只写索引。
 - 变更版本：同步 `PROJECT_VER`、`CHANGELOG.md` 和发布说明。
 
 ## 完成定义
