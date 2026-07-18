@@ -14,15 +14,18 @@
 
 | 内容 | 本地路径 | 用途 |
 |---|---|---|
-| 总索引 | `README.md`、`inventory_by_category.md` | 查找已有代码、文档和硬件资料 |
-| 结构化清单 | `manifest.csv` | 按路径、类型、时间和来源检索 |
-| S3 官方归档 | `官方文档/Seeed_XIAO_ESP32S3_Getting_Started/` | 官方中文原文、全系列镜像和资源清单 |
+| 总索引 | `README.md` | 查看可信度规则、当前入口和目录边界 |
+| 清理记录 | `清理记录_2026-07-18.md` | 查看移除文件、原因和可恢复位置 |
+| S3 官方归档 | `官方文档/Seeed_XIAO_ESP32S3_Getting_Started/` | 未经语义改写的官方中文 Raw Markdown 和资源清单 |
 | 历史 PlatformIO 项目 | `02_PlatformIO项目/` | 查找已经验证过的接线与实现 |
 | 硬件资料 | `04_硬件_数据手册/` | ADS1115 等外围设备数据手册和原理图 |
-| 原 XIAO 工作目录 | `归档/SeeedStudioXIAOESP32_2026-07-18/` | 原始文档、组件、压缩包和工作环境完整归档 |
+| 原 XIAO 工作目录 | `归档/SeeedStudioXIAOESP32_2026-07-18/` | 数据手册、第三方库和原工作环境归档；错误派生手册已移出 |
+| ESP-IDF 源码 | `05_ESP-IDF源码/` | 查询当前本机 framework 实现；注意区分版本 |
+| 工具链与 SDK 缓存 | `06_工具链_SDK缓存/` | 离线定位已安装包，不作为可提交依赖 |
+| 固件二进制 | `07_固件_二进制/` | 历史构建线索；使用前必须核对板型、版本和校验值 |
 
 !!! warning
-    `03_文档资料/` 中包含历史派生文档。若引脚、摄像头、SD 卡、功耗或板卡版本信息冲突，以 Seeed 官方文档和本工程当前引脚表为准。
+    历史 AI 派生手册、迁移前的全盘扫描清单和低可信快捷入口已于 2026-07-18 移出资料库。`03_文档资料/` 现在只提供可信入口说明。不要从废纸篓恢复旧手册作为开发依据。
 
 ## Seeed 官方入口
 
@@ -39,6 +42,29 @@
 - [PlatformIO XIAO ESP32C3](https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32c3.html)
 - [PlatformIO XIAO ESP32S3](https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html)
 - [PlatformIO XIAO ESP32C6](https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32c6.html)
+
+## ESP-IDF API 入口
+
+| 主题 | 官方文档 |
+|---|---|
+| I²C | [I²C master driver](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/i2c.html) |
+| SPI | [SPI master](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/spi_master.html) |
+| UART | [UART](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/uart.html) |
+| ADC | [ADC oneshot](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/adc_oneshot.html) |
+| PWM | [LEDC](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/ledc.html) |
+| Wi-Fi | [Wi-Fi Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/wifi.html) |
+| C6 | [ESP32-C6 Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/) |
+
+`stable` 页面当前可能指向 ESP-IDF 6.0.x 的最新补丁，而本工程基线是 6.0.0。复制 API 前同时核对本机 `framework-espidf` 头文件；遇到补丁差异时以当前构建依赖为准，并在升级后统一更新文档。
+
+## MCP 查询用途
+
+- `espressif-documentation`：查当前 ESP-IDF 编程指南、API 和迁移说明。
+- `esp-component-registry`：查外设组件、版本、示例和许可证。
+- `codebase-memory-mcp`：查本地代码结构、调用关系和影响范围。
+- `playwright-browser`：处理需要动态页面交互的官方 Wiki。
+
+MCP 结果是研究输入，不自动成为项目事实。板级电气和引脚仍需对照 Seeed 官方页面，组件仍需固定版本并通过本地构建/硬件验证。
 
 ## 已复核的重要差异
 
