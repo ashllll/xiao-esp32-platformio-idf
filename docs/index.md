@@ -1,6 +1,6 @@
 # XIAO ESP32 开发手册
 
-本项目是一套可直接编译的 PlatformIO + ESP-IDF 工程，也是面向个人嵌入式项目的维护手册。它同时支持 Seeed Studio XIAO ESP32C3、ESP32S3 和 ESP32C6，并固定使用 `platformio/espressif32@7.0.0` 与 ESP-IDF 6.0.0。
+本项目是一套可直接编译的 PlatformIO + ESP-IDF 工程，也是面向个人嵌入式项目的维护手册。它同时支持 Seeed Studio XIAO ESP32C3、ESP32S3 和 ESP32C6，并固定使用 `platformio/espressif32@7.0.1` 与 ESP-IDF 6.0.1。
 
 ## 从这里开始
 
@@ -8,6 +8,7 @@
 |---|---|---|
 | 首次搭建环境 | [快速开始](getting-started.md) | 三个环境至少完成目标板编译，文档严格构建通过 |
 | 选择板卡和引脚 | [型号对比](hardware/boards.md)、[引脚定义](hardware/pinout.md) | 接线表使用 D0–D10 和对应 GPIO，不含冲突 |
+| 区分构建与真机证据 | [真机验证矩阵](hardware/validation.md) | 结论注明证据层级、板卡变体和固件来源状态 |
 | 添加传感器或模块 | [外围设备集成](peripherals/index.md) | 组件、接线、依赖、最小验证和来源记录齐全 |
 | 接入高精度模拟采集 | [ADS1115 实战](peripherals/ads1115.md) | 可探测设备，并用已知电压完成读数核对 |
 | 编译、烧录和导出固件 | [编译与烧录](firmware/build-flash.md)、[固件发布](firmware/release.md) | 固件、Flash 参数和校验值可追溯 |
@@ -35,9 +36,9 @@ flowchart LR
 | 项目 | 值 |
 |---|---|
 | PlatformIO Core | 6.1.19 |
-| Espressif32 Platform | 7.0.0（固定版本） |
-| ESP-IDF | 6.0.0（由 PlatformIO 平台集成） |
-| 文档 | MkDocs 1.6.x + Material 9.7.x |
+| Espressif32 Platform | 7.0.1（固定版本） |
+| ESP-IDF | 6.0.1（由 PlatformIO 平台集成） |
+| 文档 | MkDocs 1.6.1 + Material 9.7.7 |
 | 本机 | Apple Silicon / `darwin_arm64` |
 | 最近核对 | 2026-07-18 |
 

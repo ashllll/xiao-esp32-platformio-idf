@@ -21,7 +21,7 @@
 cp docs/peripherals/_template.md docs/peripherals/<device>.md
 ```
 
-完成模板所有字段，把页面加入 `mkdocs.yml`，然后运行严格构建。不要发布仍含 `<占位符>`、空来源、未知供电或“待测试”却没有明确状态的页面。
+完成模板所有字段，把页面加入 `mkdocs.yml`，然后运行严格构建。不要发布仍含未替换模板字段、空来源、未知供电或“待测试”却没有明确状态的页面。
 
 ## 来源优先级
 
@@ -46,10 +46,13 @@ cp docs/peripherals/_template.md docs/peripherals/<device>.md
 ## 链接与构建
 
 ```bash
+python3 scripts/validate_docs.py
 .venv/bin/mkdocs build --strict
 ```
 
-CI 对 pull request 运行严格构建，main 分支构建成功后发布 GitHub Pages。内部链接优先使用相对路径；外部链接使用官方永久入口，不链接搜索结果页。
+文档验证不访问网络，负责检查 `project-baseline.json` 与依赖版本、已知旧基线、相对链接和锚点、MkDocs 导航覆盖、模板占位符及个人绝对路径。CI 对 pull request 运行该检查和严格构建，main 分支构建成功后发布 GitHub Pages。内部链接优先使用相对路径；外部链接使用官方永久入口，不链接搜索结果页。
+
+外部 URL 会变化，不在每次 CI 中批量访问。维护版本或引用来源时应人工打开官方链接，并记录核对日期。
 
 ## 评审清单
 
@@ -61,6 +64,7 @@ CI 对 pull request 运行严格构建，main 分支构建成功后发布 GitHub
 - [ ] “编译通过”和“硬件已验证”没有混为一谈。
 - [ ] 失败行为、超时、重试和恢复有说明。
 - [ ] 来源、版本/板型和核对日期齐全。
+- [ ] `python3 scripts/validate_docs.py` 通过。
 - [ ] `mkdocs build --strict` 通过。
 
 ## 定期更新
@@ -68,7 +72,7 @@ CI 对 pull request 运行严格构建，main 分支构建成功后发布 GitHub
 升级 PlatformIO/ESP-IDF、换板卡批次、修改引脚或更换外设组件时，搜索并更新所有相关页面：
 
 ```bash
-rg '7\.0\.0|ESP-IDF 6\.0\.0|XIAO_D|GPIO|<component-name>' docs README.md
+rg '7\.0\.1|ESP-IDF 6\.0\.1|XIAO_D|GPIO|<component-name>' docs README.md
 ```
 
-更新后必须重新构建三个固件环境并执行严格文档构建。只有文档文字变化且不涉及配置/API/引脚时，才可只运行文档验证。
+平台升级时同步修改 `project-baseline.json`、`platformio.ini`、依赖清单、配置文档、资料索引和 `CHANGELOG.md`。更新后必须重新构建三个固件环境并执行严格文档构建。只有文档文字变化且不涉及配置/API/引脚时，才可只运行文档验证。

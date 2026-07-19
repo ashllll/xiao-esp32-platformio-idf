@@ -34,6 +34,8 @@ rg 'CONFIG_ESPTOOLPY_FLASHSIZE|CONFIG_SPIRAM' \
 
 根环境固定 `platform = espressif32@7.0.1`，对应 PlatformIO 官方集成的 ESP-IDF 6.0.1。Espressif 单独发布的更高补丁版本不能绕过 PlatformIO 集成和工具链验证直接覆盖。更新平台时应一次性验证三个环境、Flash/PSRAM、固件大小和文档，并在 `CHANGELOG.md` 记录对应关系。
 
+`project-baseline.json` 是版本一致性检查的机器可读来源。平台升级必须同时更新该文件、`platformio.ini`、依赖清单、本文档和资料索引，再运行 `python3 scripts/validate_docs.py`。验证器会拒绝旧基线残留，避免文档站与实际工具链分叉。
+
 共享 sdkconfig 把 USB Serial/JTAG 设为主应用控制台，使 D6/D7 可用于业务 UART。ROM 启动日志发生在 ESP-IDF 接管之前，仍可能从 UART0 输出；不要为了消除它写入不可逆 eFuse。
 
 不要单独覆盖 `framework-espidf` 为更高版本，除非同时验证 PlatformIO 构建脚本、工具链、board manifest 和三个目标板。版本号更高不等于集成更稳定。

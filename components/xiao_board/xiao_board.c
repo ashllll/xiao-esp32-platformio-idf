@@ -124,7 +124,8 @@ esp_err_t xiao_board_led_set(bool on)
     int level = on ? XIAO_BOARD_LED_ACTIVE_LEVEL : 1 - XIAO_BOARD_LED_ACTIVE_LEVEL;
     esp_err_t err = gpio_set_level(XIAO_BOARD_LED_PIN, level);
     if (err == ESP_OK) {
-        /* Keep the software state aligned with hardware when a GPIO write fails. */
+        /* Only update software state on successful GPIO write; on failure the
+         * hardware state is unchanged, so the software state stays aligned. */
         s_led_on = on;
     }
     return err;

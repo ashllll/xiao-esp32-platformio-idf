@@ -1,0 +1,44 @@
+name: 硬件验证结果
+description: 记录可复现的真机通过或失败结果
+title: "hardware: "
+body:
+  - type: input
+    id: board
+    attributes:
+      label: 板卡与具体变体
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Git 提交或固件 manifest
+      description: 如果只做未绑定来源的只读验收，请明确写出
+    validations:
+      required: true
+  - type: dropdown
+    id: flashed
+    attributes:
+      label: 本次是否烧录
+      options: ["否，只读验收", "是，已明确授权"]
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: 供电、接线和外围设备
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 验收命令与结果
+      description: 请删除串口路径、凭据和设备密钥
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 日志已经脱敏，不含凭据、私钥、令牌或个人路径
+          required: true

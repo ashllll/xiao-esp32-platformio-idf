@@ -1,0 +1,35 @@
+name: 文档错误
+description: 报告版本、引脚、接线、链接或操作步骤问题
+title: "docs: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 文档位置
+      description: 文件路径、页面 URL 或标题
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题
+      description: 说明当前内容为什么不正确或不完整
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 依据
+      description: 提供 Seeed、Espressif、PlatformIO 或器件厂商的官方来源
+  - type: input
+    id: board
+    attributes:
+      label: 板卡与变体
+      placeholder: XIAO ESP32S3 基础版 / Sense / Plus
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我没有附带凭据、私钥或设备密钥
+          required: true

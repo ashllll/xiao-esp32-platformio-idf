@@ -6,7 +6,7 @@
 | `xiao_esp32s3` | `seeed_xiao_esp32s3` | Xtensa，双核 | 8 MB / Octal PSRAM | 2.4 GHz Wi-Fi、BLE | 摄像头、语音、显示、较大缓冲区和 USB 应用 |
 | `xiao_esp32c6` | `seeed_xiao_esp32c6` | RISC-V，单核 | 4 MB / 无板载 PSRAM | Wi-Fi 6、BLE、IEEE 802.15.4 | Thread、Zigbee、Matter 或新一代低功耗联网 |
 
-构建平台固定为 `platformio/espressif32@7.0.0`，对应 ESP-IDF 6.0.0 工具链。宿主环境为 Apple Silicon `darwin_arm64`。上表描述当前模板的配置，不替代芯片数据手册中的完整能力表。
+构建平台固定为 `platformio/espressif32@7.0.1`，对应 ESP-IDF 6.0.1 工具链。宿主环境为 Apple Silicon `darwin_arm64`。上表描述当前模板的配置，不替代芯片数据手册中的完整能力表。构建支持与实际板卡覆盖分开记录在[真机验证矩阵](validation.md)。
 
 ## 选择原则
 

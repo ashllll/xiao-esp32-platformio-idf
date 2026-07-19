@@ -62,6 +62,7 @@ components/<device>/
 | 压力 | 长时间运行、断线、复位、异常输入 | 恢复路径和资源释放可靠 |
 | 跨板卡 | 构建 C3/S3/C6 | 共用代码没有板型回归 |
 | 文档 | `mkdocs build --strict` | 导航和文档结构完整 |
+| 文档一致性 | `python3 scripts/validate_docs.py` | 固定版本、相对链接、锚点、导航覆盖和占位符一致 |
 
 ## 6. 交付固件
 

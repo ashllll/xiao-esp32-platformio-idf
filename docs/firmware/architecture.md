@@ -27,11 +27,10 @@ sequenceDiagram
     participant Board as xiao_board
     participant HW as GPIO/Flash
     IDF->>App: 调用 app_main()
-    App->>HW: 获取芯片和 Flash 信息
-    App->>Board: xiao_board_init()
-    Board->>HW: 配置用户 LED（若存在）
     App->>Board: xiao_board_validate()
     Board->>HW: 校验芯片系列和 Flash；S3 校验 PSRAM
+    App->>Board: xiao_board_init()
+    Board->>HW: 配置用户 LED（若存在）
     App->>App: 输出板名、容量、默认总线引脚和 READY 标志
     loop 每秒
         App->>Board: 切换 LED（若支持）

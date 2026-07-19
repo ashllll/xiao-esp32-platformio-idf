@@ -1,6 +1,9 @@
 site_name: XIAO ESP32 开发文档
 site_description: PlatformIO + ESP-IDF 项目、固件、引脚及外围设备文档
-repo_name: xiao_esp32
+site_url: https://ashllll.github.io/xiao-esp32-platformio-idf/
+repo_url: https://github.com/ashllll/xiao-esp32-platformio-idf
+repo_name: ashllll/xiao-esp32-platformio-idf
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -24,6 +27,7 @@ nav:
       - XIAO 型号: hardware/boards.md
       - 引脚定义: hardware/pinout.md
       - 供电、USB 与电气安全: hardware/power-usb.md
+      - 真机验证矩阵: hardware/validation.md
   - 固件:
       - 工程结构: firmware/architecture.md
       - 配置与依赖: firmware/configuration.md
