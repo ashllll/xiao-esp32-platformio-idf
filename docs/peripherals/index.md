@@ -13,7 +13,15 @@
 | ADC | 按板型能力核对 | `esp_adc/adc_oneshot.h` | 电压、模拟传感器 |
 | PWM | GPIO matrix 可路由引脚 | `driver/ledc.h` | LED、蜂鸣器、简单调速 |
 
-详见 [I²C](i2c.md)、[ADS1115 实战](ads1115.md)、[SPI](spi.md)、[UART](uart.md) 和 [GPIO/ADC/PWM](gpio-adc-pwm.md)。
+详见 [I²C](i2c.md)、[ADS1115 实战](ads1115.md)、[SPI](spi.md)、[UART](uart.md) 和 [GPIO/ADC/PWM](gpio-adc-pwm.md)。环境采集与显示设备另有独立指南：
+
+| 设备 | 接口 | 能力边界 |
+|---|---|---|
+| [DFRobot Fermion ENS160](ens160.md) | I²C | AQI、TVOC 和推算 eCO₂；不是直接 CO₂ |
+| [GY-SGP41](sgp41.md) | I²C | 原始 VOC/NOx 与算法 Index；不输出 TVOC/eCO₂/CO₂ |
+| [SHT40 Qwiic](sht40.md) | I²C | 温湿度与气体传感器补偿输入 |
+| [0.96 寸 128×64 OLED](oled-096-i2c.md) | I²C | 显示；必须识别 SSD1306/SH1106 等实际控制器 |
+| [OPT101 模块](opt101.md) | 模拟输出/ADC | 光功率趋势；未经光谱标定不等于 lux |
 
 ## 新外设的落地步骤
 
@@ -61,4 +69,4 @@
 
 ## 现有资料
 
-本机资料库包含 ADS1115 数据手册、原理图和历史工程，可从[资料索引](../reference/resources.md)定位；可直接按 [ADS1115 实战](ads1115.md)完成接线、驱动与验证。历史代码可能是 Arduino、旧 ESP-IDF API，或包含未经核实的依赖声明，只作为线索，接入本工程前必须按 ESP-IDF 6.0 重写和验证。
+本机资料库包含 ADS1115 数据手册、原理图和历史工程，可从[资料索引](../reference/resources.md)定位；可直接按 [ADS1115 实战](ads1115.md)完成接线、驱动与验证。空气质量检测可从 ENS160/SGP41/SHT40 页面开始，但必须保留 eCO₂、Gas Index 与直接 CO₂ 测量的边界。历史代码可能是 Arduino、旧 ESP-IDF API，或包含未经核实的依赖声明，只作为线索，接入本工程前必须按 ESP-IDF 6.0 重写和验证。

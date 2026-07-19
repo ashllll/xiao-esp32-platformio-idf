@@ -36,6 +36,11 @@ nav:
   - 外围设备:
       - 集成总览: peripherals/index.md
       - I²C: peripherals/i2c.md
+      - ENS160 空气质量传感器: peripherals/ens160.md
+      - SGP41 VOC/NOx 传感器: peripherals/sgp41.md
+      - SHT40 温湿度传感器: peripherals/sht40.md
+      - 0.96 寸 I²C OLED: peripherals/oled-096-i2c.md
+      - OPT101 光照传感器: peripherals/opt101.md
       - ADS1115 实战: peripherals/ads1115.md
       - SPI: peripherals/spi.md
       - UART: peripherals/uart.md
@@ -45,6 +50,11 @@ nav:
   - 参考资料:
       - 资料索引: reference/resources.md
       - 文档维护: reference/maintenance.md
+      - ENS160 一手资料核对: research/ens160-primary-sources.md
+      - SGP41 一手资料核对: research/sgp41-primary-sources.md
+      - SHT40 一手资料核对: research/sht40-primary-sources.md
+      - OLED 一手资料核对: research/oled-128x64-primary-sources.md
+      - OPT101 一手资料核对: research/opt101-primary-sources.md
 
 exclude_docs: |
   peripherals/_template.md

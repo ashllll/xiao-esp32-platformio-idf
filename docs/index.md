@@ -10,6 +10,9 @@
 | 选择板卡和引脚 | [型号对比](hardware/boards.md)、[引脚定义](hardware/pinout.md) | 接线表使用 D0–D10 和对应 GPIO，不含冲突 |
 | 区分构建与真机证据 | [真机验证矩阵](hardware/validation.md) | 结论注明证据层级、板卡变体和固件来源状态 |
 | 添加传感器或模块 | [外围设备集成](peripherals/index.md) | 组件、接线、依赖、最小验证和来源记录齐全 |
+| 接入室内空气质量检测 | [ENS160](peripherals/ens160.md)、[SGP41](peripherals/sgp41.md)、[SHT40](peripherals/sht40.md) | 区分气体趋势、算法 index、eCO₂、直接 CO₂ 和温湿度补偿 |
+| 添加本地显示 | [0.96 寸 I²C OLED](peripherals/oled-096-i2c.md) | 先识别 SSD1306/SH1106，再固定驱动和初始化参数 |
+| 采集模拟光信号 | [OPT101 光照传感器](peripherals/opt101.md) | ADC 电压经板级校准；没有光谱标定时不宣称 lux |
 | 接入高精度模拟采集 | [ADS1115 实战](peripherals/ads1115.md) | 可探测设备，并用已知电压完成读数核对 |
 | 编译、烧录和导出固件 | [编译与烧录](firmware/build-flash.md)、[固件发布](firmware/release.md) | 固件、Flash 参数和校验值可追溯 |
 | 排查启动或串口问题 | [调试手册](debugging/index.md) | 能定位到供电、端口、下载模式、配置或外设冲突 |
