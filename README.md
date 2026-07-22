@@ -14,6 +14,9 @@
 > [!IMPORTANT]
 > 本仓库区分“编译通过”“真机通过”和“传感器指标有效”。构建成功不代表硬件已经验证；TVOC 算法推算出的 eCO₂ 也不等于直接测量的 CO₂。
 
+> [!IMPORTANT]
+> 未指定器件厂商时，本项目默认优先选择 TI 器件，只使用 `ti.com` 官方数据手册，并以 TI 推荐/典型应用原理图作为项目设计基线。若 TI 没有合适器件，必须说明原因并取得确认后才能改用其他原厂资料。参考图仍须结合实际工作条件完成参数计算、ERC、DRC 和真机验证。完整规则见[硬件设计、数据手册与原理图规则](docs/reference/hardware-design-policy.md)。
+
 在线手册：[ashllll.github.io/xiao-esp32-platformio-idf](https://ashllll.github.io/xiao-esp32-platformio-idf/)
 
 English documentation: [ashllll.github.io/xiao-esp32-platformio-idf/en/](https://ashllll.github.io/xiao-esp32-platformio-idf/en/). The website provides a page-aware Chinese/English language selector, localized navigation and search, and strict translation-parity checks.
@@ -134,7 +137,7 @@ mkdocs serve
 
 1. 选定板型，在对应环境完成无硬件构建。
 2. 按丝印 D0–D10 设计接线，并核对电压、上拉、电流峰值和引脚冲突。
-3. 从外设模板创建资料页，优先引用芯片原厂数据表、模块厂商原理图和 ESP-IDF 官方 API。
+3. 从外设模板创建资料页；未指定厂商时默认选择 TI 器件并引用 `ti.com` 官方数据手册和参考原理图，指定厂商时使用对应原厂资料，同时记录 ESP-IDF 官方 API。
 4. 将驱动实现为独立 ESP-IDF 组件，先做设备 ID、地址探测和错误路径验证。
 5. 运行三板构建、单元测试和严格文档构建。
 6. 在明确设备和端口后进行真机验收；发布时生成带来源提交和校验值的固件包。

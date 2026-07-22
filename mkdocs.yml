@@ -62,6 +62,7 @@ plugins:
             参考资料: References
             资料索引: Resource index
             文档维护: Documentation maintenance
+            硬件设计、数据手册与原理图规则: Hardware design, datasheet, and schematic policy
             ENS160 一手资料核对: ENS160 primary-source review
             SGP41 一手资料核对: SGP41 primary-source review
             SHT40 一手资料核对: SHT40 primary-source review
@@ -101,6 +102,7 @@ nav:
   - 参考资料:
       - 资料索引: reference/resources.md
       - 文档维护: reference/maintenance.md
+      - 硬件设计、数据手册与原理图规则: reference/hardware-design-policy.md
       - ENS160 一手资料核对: research/ens160-primary-sources.md
       - SGP41 一手资料核对: research/sgp41-primary-sources.md
       - SHT40 一手资料核对: research/sht40-primary-sources.md
