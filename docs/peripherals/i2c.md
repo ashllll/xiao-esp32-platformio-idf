@@ -26,7 +26,7 @@ static i2c_master_bus_handle_t s_bus;
 static esp_err_t app_i2c_init(void)
 {
     const i2c_master_bus_config_t cfg = {
-        .i2c_port = 0,
+        .i2c_port = I2C_NUM_0,
         .sda_io_num = XIAO_I2C_SDA,
         .scl_io_num = XIAO_I2C_SCL,
         .clk_source = I2C_CLK_SRC_DEFAULT,

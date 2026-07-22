@@ -28,7 +28,7 @@ static esp_err_t create_i2c_bus(i2c_master_bus_handle_t *bus)
         .scl_io_num = XIAO_I2C_SCL,
         .clk_source = I2C_CLK_SRC_DEFAULT,
         .glitch_ignore_cnt = 7,
-        .flags.enable_internal_pullup = true,
+        .flags.enable_internal_pullup = false,
     };
     return i2c_new_master_bus(&bus_config, bus);
 }
