@@ -67,6 +67,7 @@ plugins:
             SHT40 一手资料核对: SHT40 primary-source review
             OLED 一手资料核对: OLED primary-source review
             OPT101 一手资料核对: OPT101 primary-source review
+            ADS1115 与 NTC100K 一手资料核对: ADS1115 and NTC100K primary-source review
             XIAO/工具链文档审查: XIAO/toolchain documentation audit
 
 nav:
@@ -105,6 +106,7 @@ nav:
       - SHT40 一手资料核对: research/sht40-primary-sources.md
       - OLED 一手资料核对: research/oled-128x64-primary-sources.md
       - OPT101 一手资料核对: research/opt101-primary-sources.md
+      - ADS1115 与 NTC100K 一手资料核对: research/ads1115-ntc100k-primary-sources-2026-07-22.md
       - XIAO/工具链文档审查: research/xiao-platform-docs-audit-2026-07-22.md
 
 exclude_docs: |

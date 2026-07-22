@@ -17,6 +17,7 @@ This section separates bus fundamentals from module-specific claims. A product n
 - [ENS160](ens160.md), [SGP41](sgp41.md), and [SHT40](sht40.md)
 - [0.96-inch I²C OLED](oled-096-i2c.md)
 - [OPT101](opt101.md) and [ADS1115](ads1115.md)
+- [ADS1115 + NTC100K B3950](ads1115.md), including a buildable three-board temperature example and its accuracy limits
 
 Use `docs/peripherals/_template.md` for a new page. Record the driver/component version, framework boundary, wiring, power, error policy, and source review date.
 
