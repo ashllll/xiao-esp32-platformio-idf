@@ -77,7 +77,7 @@ ESP_ERROR_CHECK(i2c_master_transmit_receive(
 
 ## 官方 API
 
-- [ESP-IDF stable：I²C](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/i2c.html)
-- [ESP-IDF 6.0 外设迁移说明](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/migration-guides/release-6.x/6.0/peripherals.html)
+- [ESP-IDF 6.0.1：I²C](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/i2c.html)
+- [ESP-IDF 6.0 外设迁移说明](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/migration-guides/release-6.x/6.0/peripherals.html)
 
 最近核对：2026-07-18。

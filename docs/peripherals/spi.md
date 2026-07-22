@@ -73,4 +73,4 @@ ESP_ERROR_CHECK(spi_device_transmit(device, &t));
 
 先等待/取回所有排队事务，调用 `spi_bus_remove_device()`，最后 `spi_bus_free()`。多任务访问同一 device handle 时由组件加锁，不能在两个任务中同时发同步事务。
 
-官方参考：[ESP-IDF SPI Master Driver](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/spi_master.html)。最近核对：2026-07-18。
+官方参考：[ESP-IDF 6.0.1 SPI Master Driver](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/spi_master.html)。最近核对：2026-07-22。

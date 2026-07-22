@@ -5,6 +5,17 @@
 
 ## [Unreleased]
 
+### Added
+
+- 为全部发布页面增加英文对应页，并在文档站提供同页中英语言切换、本地化导航、搜索与 `hreflang`。
+- 增加双语文件配对、英文链接/锚点解析和 i18n 固定依赖检查。
+- 增加 XIAO C3/S3/C6、PlatformIO、ESP-IDF 与双语站的一手资料审查记录。
+
+### Fixed
+
+- 将 S3 Sense microSD 片选从错误的 GPIO21 修正为 GPIO3，并明确 D2/D8/D9/D10 冲突；GPIO21 保留为用户 LED。
+- 将 C6 CPU 表述修正为单核 HP CPU 加 LP RISC-V 核，并把版本敏感的 ESP-IDF API 链接固定到 6.0.1。
+
 ## [0.3.0] - 2026-07-18
 
 ### Added

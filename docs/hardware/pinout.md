@@ -39,7 +39,7 @@ ESP_ERROR_CHECK(gpio_set_level(XIAO_D3, 1));
 - ESP32C3 的 GPIO2、GPIO8、GPIO9 是启动配置相关引脚；外围电路不要在复位时强制错误电平。
 - ESP32C3 的 D6 会输出启动日志，作为输入使用时要特别谨慎。
 - ESP32S3 的 GPIO19/20 通常用于原生 USB，不应随意改作普通 GPIO。
-- S3 Sense 的 microSD 会占用 GPIO7、GPIO8、GPIO9、GPIO21。
+- S3 Sense 的 microSD 使用 CS=GPIO3、SCK=GPIO7、MISO=GPIO8、MOSI=GPIO9，分别占用 D2、D8、D9、D10；GPIO21 是用户 LED。
 - 接入 5 V 外设前确认其逻辑电平；ESP32 GPIO 不耐受 5 V。
 
 ## 分配清单

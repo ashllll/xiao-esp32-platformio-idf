@@ -43,9 +43,9 @@
 
 ## 官方入口
 
-- [ESP-IDF Wi-Fi](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/wifi.html)
-- [ESP-IDF Bluetooth API](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/bluetooth/index.html)
-- [ESP-IDF ESP32-C6 文档](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/)
+- [ESP-IDF 6.0.1 Wi-Fi](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-guides/wifi.html)
+- [ESP-IDF 6.0.1 Bluetooth API](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/bluetooth/index.html)
+- [ESP-IDF 6.0.1 ESP32-C6 文档](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32c6/)
 - [Espressif Component Registry](https://components.espressif.com/)
 
 最近核对：2026-07-18。

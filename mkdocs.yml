@@ -19,6 +19,56 @@ theme:
     - search.highlight
     - search.suggest
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: false
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: XIAO ESP32 Development Guide
+          site_description: PlatformIO + ESP-IDF project, firmware, pinout, and peripheral documentation
+          nav_translations:
+            首页: Home
+            快速开始: Getting started
+            开发流程: Development workflow
+            硬件: Hardware
+            XIAO 型号: XIAO boards
+            引脚定义: Pinout
+            供电、USB 与电气安全: Power, USB, and electrical safety
+            真机验证矩阵: Hardware validation matrix
+            固件: Firmware
+            工程结构: Architecture
+            配置与依赖: Configuration and dependencies
+            编译与烧录: Build and flash
+            固件发布: Firmware releases
+            外围设备: Peripherals
+            集成总览: Integration overview
+            ENS160 空气质量传感器: ENS160 air-quality sensor
+            SGP41 VOC/NOx 传感器: SGP41 VOC/NOx sensor
+            SHT40 温湿度传感器: SHT40 temperature/humidity sensor
+            0.96 寸 I²C OLED: 0.96-inch I²C OLED
+            OPT101 光照传感器: OPT101 light sensor
+            ADS1115 实战: ADS1115 guide
+            GPIO、ADC 与 PWM: GPIO, ADC, and PWM
+            无线连接: Wireless
+            调试: Debugging
+            参考资料: References
+            资料索引: Resource index
+            文档维护: Documentation maintenance
+            ENS160 一手资料核对: ENS160 primary-source review
+            SGP41 一手资料核对: SGP41 primary-source review
+            SHT40 一手资料核对: SHT40 primary-source review
+            OLED 一手资料核对: OLED primary-source review
+            OPT101 一手资料核对: OPT101 primary-source review
+            XIAO/工具链文档审查: XIAO/toolchain documentation audit
+
 nav:
   - 首页: index.md
   - 快速开始: getting-started.md
@@ -55,6 +105,7 @@ nav:
       - SHT40 一手资料核对: research/sht40-primary-sources.md
       - OLED 一手资料核对: research/oled-128x64-primary-sources.md
       - OPT101 一手资料核对: research/opt101-primary-sources.md
+      - XIAO/工具链文档审查: research/xiao-platform-docs-audit-2026-07-22.md
 
 exclude_docs: |
   peripherals/_template.md

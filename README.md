@@ -16,6 +16,8 @@
 
 在线手册：[ashllll.github.io/xiao-esp32-platformio-idf](https://ashllll.github.io/xiao-esp32-platformio-idf/)
 
+English documentation: [ashllll.github.io/xiao-esp32-platformio-idf/en/](https://ashllll.github.io/xiao-esp32-platformio-idf/en/). The website provides a page-aware Chinese/English language selector, localized navigation and search, and strict translation-parity checks.
+
 可选的完整本地资料库由 `XIAO_ESP32_REFERENCE_ROOT` 指定，未设置时默认为 `~/ESP32_资料整理`；本地资料库不存在时不影响固件或文档构建。工程文档的“资料索引”页记录了经过核对的官方入口和本地资料用法。
 
 ## 当前能力
@@ -25,7 +27,7 @@
 | 板卡 | XIAO ESP32C3、ESP32S3、ESP32C6 的独立 PlatformIO 环境和统一 D0–D10 符号 |
 | 固件 | ESP-IDF 6.0.1、启动时芯片/Flash/PSRAM 自检、USB 日志和 LED 心跳 |
 | 外设 | I²C、SPI、UART、GPIO、ADC、PWM，以及 ADS1115 和空气/环境传感器接入指南 |
-| 文档 | MkDocs Material 站点、官方资料索引、外设页模板和严格链接/导航检查 |
+| 文档 | MkDocs Material 中英双语站点、官方资料索引、外设页模板和严格链接/导航/翻译配对检查 |
 | 交付 | 三板 CI 构建、可追溯 manifest、SHA-256 校验和、完整 Flash 参数 |
 | 验收 | 串口 READY/heartbeat 协议；可只读验证，也可在显式授权后烧录验证 |
 

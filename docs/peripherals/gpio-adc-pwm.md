@@ -74,8 +74,8 @@ ESP_ERROR_CHECK(ledc_channel_config(&channel_cfg));
 
 官方参考：
 
-- [GPIO](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html)
-- [ADC oneshot](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/adc_oneshot.html)
-- [LEDC](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/ledc.html)
+- [GPIO](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/gpio.html)
+- [ADC oneshot](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/adc_oneshot.html)
+- [LEDC](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/ledc.html)
 
 最近核对：2026-07-18。

@@ -56,4 +56,4 @@ UART 只定义字节传输。外设页还必须定义：
 3. 验证断电、半帧、错误 CRC、超时和重连。
 4. 在生成的 sdkconfig 中确认 `CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG` 已启用且 `CONFIG_ESP_CONSOLE_UART` 未启用。
 
-官方参考：[ESP-IDF UART](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/uart.html)。最近核对：2026-07-18。
+官方参考：[ESP-IDF 6.0.1 UART](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32/api-reference/peripherals/uart.html)。最近核对：2026-07-22。

@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|
 | `xiao_esp32c3` | `seeed_xiao_esp32c3` | RISC-V，单核 | 4 MB / 无板载 PSRAM | 2.4 GHz Wi-Fi、BLE | 成本敏感、普通传感器、低复杂度联网 |
 | `xiao_esp32s3` | `seeed_xiao_esp32s3` | Xtensa，双核 | 8 MB / Octal PSRAM | 2.4 GHz Wi-Fi、BLE | 摄像头、语音、显示、较大缓冲区和 USB 应用 |
-| `xiao_esp32c6` | `seeed_xiao_esp32c6` | RISC-V，单核 | 4 MB / 无板载 PSRAM | Wi-Fi 6、BLE、IEEE 802.15.4 | Thread、Zigbee、Matter 或新一代低功耗联网 |
+| `xiao_esp32c6` | `seeed_xiao_esp32c6` | 32-bit RISC-V；单核 HP CPU + LP RISC-V 核 | 4 MB / 无板载 PSRAM | Wi-Fi 6、BLE、IEEE 802.15.4 | Thread、Zigbee、Matter 或新一代低功耗联网 |
 
 构建平台固定为 `platformio/espressif32@7.0.1`，对应 ESP-IDF 6.0.1 工具链。宿主环境为 Apple Silicon `darwin_arm64`。上表描述当前模板的配置，不替代芯片数据手册中的完整能力表。构建支持与实际板卡覆盖分开记录在[真机验证矩阵](validation.md)。
 
@@ -23,7 +23,7 @@
 
 ### S3 Sense
 
-Sense 扩展板带摄像头和 microSD。常见 microSD 接线占用 GPIO7、GPIO8、GPIO9、GPIO21，会与排针 SPI 和用户 LED 冲突。摄像头型号可能随硬件批次变化，代码和文档必须记录实物批次。
+Sense 扩展板带摄像头和 microSD。官方 microSD 引脚为 CS=GPIO3、SCK=GPIO7、MISO=GPIO8、MOSI=GPIO9，分别与 D2、D8、D9、D10 冲突；GPIO21 是用户 LED，不是 SD 片选。早期摄像头为已停产的 OV2640，后续板使用 OV3660，并支持兼容替换的 OV5640；代码和文档必须记录实物批次。
 
 ### S3 Plus
 

@@ -40,6 +40,7 @@ def _read_json(path: Path) -> dict[str, str]:
         "esp_idf",
         "mkdocs",
         "mkdocs_material",
+        "mkdocs_static_i18n",
         "platformio_core",
         "platformio_espressif32",
         "project_version",
@@ -84,6 +85,11 @@ def validate_versions(project: Path, errors: list[str]) -> dict[str, str]:
         errors,
     )
     _require_text(
+        project / "requirements-docs.txt",
+        f"mkdocs-static-i18n=={baseline['mkdocs_static_i18n']}",
+        errors,
+    )
+    _require_text(
         project / "CMakeLists.txt",
         f'set(PROJECT_VER "{baseline["project_version"]}")',
         errors,
@@ -100,6 +106,9 @@ def validate_versions(project: Path, errors: list[str]) -> dict[str, str]:
     for path in baseline_docs:
         _require_text(path, platform, errors)
         _require_text(path, baseline["esp_idf"], errors)
+        english = path.with_name(f"{path.stem}.en{path.suffix}")
+        _require_text(english, platform, errors)
+        _require_text(english, baseline["esp_idf"], errors)
     return baseline
 
 
@@ -131,6 +140,17 @@ def _markdown_files(project: Path) -> list[Path]:
     return files
 
 
+def _locale(path: Path) -> str:
+    return "en" if path.stem.endswith(".en") else "zh"
+
+
+def _localized_destination(destination: Path, locale: str) -> Path:
+    if locale == "zh" or destination.stem.endswith(f".{locale}"):
+        return destination
+    localized = destination.with_name(f"{destination.stem}.{locale}{destination.suffix}")
+    return localized if localized.is_file() else destination
+
+
 def validate_markdown(project: Path, errors: list[str]) -> None:
     anchors: dict[Path, set[str]] = {}
     for source in _markdown_files(project):
@@ -153,6 +173,7 @@ def validate_markdown(project: Path, errors: list[str]) -> None:
             destination = source if not path_text else (source.parent / path_text).resolve()
             if destination.is_dir():
                 destination = destination / "README.md"
+            destination = _localized_destination(destination, _locale(source))
             if not destination.is_file():
                 errors.append(f"{source}: broken relative link {raw_target!r}")
                 continue
@@ -173,7 +194,7 @@ def validate_mkdocs_nav(project: Path, errors: list[str]) -> None:
     text = config.read_text(encoding="utf-8")
     referenced = set(re.findall(r"(?:^|\s)([A-Za-z0-9_./-]+\.md)\s*$", text, re.MULTILINE))
     published = {
-        path.relative_to(docs).as_posix()
+        re.sub(r"\.en(?=\.md$)", "", path.relative_to(docs).as_posix())
         for path in docs.rglob("*.md")
         if path.relative_to(docs).as_posix() not in EXCLUDED_DOCS
     }
@@ -183,11 +204,50 @@ def validate_mkdocs_nav(project: Path, errors: list[str]) -> None:
         errors.append(f"mkdocs.yml references missing document: {relative}")
 
 
+def validate_i18n_config(project: Path, errors: list[str]) -> None:
+    config = project / "mkdocs.yml"
+    if not config.is_file():
+        return
+    text = config.read_text(encoding="utf-8")
+    required = (
+        "- i18n:",
+        "docs_structure: suffix",
+        "fallback_to_default: false",
+        "locale: zh",
+        "locale: en",
+        "default: true",
+        "nav_translations:",
+    )
+    for expected in required:
+        if expected not in text:
+            errors.append(f"mkdocs.yml: missing bilingual site setting {expected!r}")
+
+
+def validate_translations(project: Path, errors: list[str]) -> None:
+    docs = project / "docs"
+    canonical = {
+        path.relative_to(docs).as_posix()
+        for path in docs.rglob("*.md")
+        if not path.stem.endswith(".en")
+        and path.relative_to(docs).as_posix() not in EXCLUDED_DOCS
+    }
+    english = {
+        re.sub(r"\.en(?=\.md$)", "", path.relative_to(docs).as_posix())
+        for path in docs.rglob("*.en.md")
+    }
+    for relative in sorted(canonical - english):
+        errors.append(f"missing English translation: {relative}")
+    for relative in sorted(english - canonical):
+        errors.append(f"English translation has no Chinese source: {relative}")
+
+
 def validate_project_docs(project: Path) -> list[str]:
     errors: list[str] = []
     validate_versions(project, errors)
     validate_markdown(project, errors)
     validate_mkdocs_nav(project, errors)
+    validate_i18n_config(project, errors)
+    validate_translations(project, errors)
     return errors
 
 

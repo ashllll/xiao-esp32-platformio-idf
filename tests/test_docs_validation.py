@@ -17,6 +17,7 @@ class DocumentationValidationTests(unittest.TestCase):
             "esp_idf": "6.0.1",
             "mkdocs": "1.6.1",
             "mkdocs_material": "9.7.7",
+            "mkdocs_static_i18n": "1.3.1",
             "platformio_core": "6.1.19",
             "platformio_espressif32": "7.0.1",
             "project_version": "0.3.0",
@@ -28,7 +29,8 @@ class DocumentationValidationTests(unittest.TestCase):
         )
         (root / "requirements-dev.txt").write_text("platformio==6.1.19\n", encoding="utf-8")
         (root / "requirements-docs.txt").write_text(
-            "mkdocs==1.6.1\nmkdocs-material==9.7.7\n", encoding="utf-8"
+            "mkdocs==1.6.1\nmkdocs-material==9.7.7\nmkdocs-static-i18n==1.3.1\n",
+            encoding="utf-8",
         )
         (root / "CMakeLists.txt").write_text('set(PROJECT_VER "0.3.0")\n', encoding="utf-8")
         (root / "CHANGELOG.md").write_text("# Changelog\n\n## [0.3.0]\n", encoding="utf-8")
@@ -41,11 +43,22 @@ class DocumentationValidationTests(unittest.TestCase):
         for relative, contents in documents.items():
             path = root / "docs" / relative
             path.write_text(contents, encoding="utf-8")
+            english = path.with_name(f"{path.stem}.en{path.suffix}")
+            english.write_text(contents, encoding="utf-8")
         (root / "README.md").write_text(
             "# Project\n\n当前源码版本为 0.3.0。\n\n[Docs](docs/index.md)\n",
             encoding="utf-8",
         )
         (root / "mkdocs.yml").write_text(
+            "plugins:\n"
+            "  - i18n:\n"
+            "      docs_structure: suffix\n"
+            "      fallback_to_default: false\n"
+            "      languages:\n"
+            "        - locale: zh\n"
+            "          default: true\n"
+            "        - locale: en\n"
+            "          nav_translations: {}\n"
             "nav:\n"
             "  - index.md\n"
             "  - hardware/boards.md\n"
@@ -99,6 +112,36 @@ class DocumentationValidationTests(unittest.TestCase):
             errors = validate_project_docs(project)
             self.assertTrue(any("nav omits" in error for error in errors))
             self.assertTrue(any("placeholder" in error for error in errors))
+
+    def test_missing_english_translation_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            project = self.make_project(Path(directory))
+            (project / "docs" / "hardware" / "boards.en.md").unlink()
+            errors = validate_project_docs(project)
+            self.assertTrue(any("missing English translation" in error for error in errors))
+
+    def test_english_links_resolve_to_english_anchors(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            project = self.make_project(Path(directory))
+            english = project / "docs" / "index.en.md"
+            english.write_text("# Home\n\n[Boards](hardware/boards.md#matrix)\n", encoding="utf-8")
+            boards = project / "docs" / "hardware" / "boards.en.md"
+            boards.write_text("# Boards\n\n## Wrong heading\n\n7.0.1 / 6.0.1\n", encoding="utf-8")
+            errors = validate_project_docs(project)
+            self.assertTrue(any("missing anchor #matrix" in error for error in errors))
+
+    def test_translation_fallback_must_remain_disabled(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            project = self.make_project(Path(directory))
+            config = project / "mkdocs.yml"
+            config.write_text(
+                config.read_text(encoding="utf-8").replace(
+                    "fallback_to_default: false", "fallback_to_default: true"
+                ),
+                encoding="utf-8",
+            )
+            errors = validate_project_docs(project)
+            self.assertTrue(any("bilingual site setting" in error for error in errors))
 
 
 if __name__ == "__main__":
