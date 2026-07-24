@@ -53,6 +53,72 @@ macOS 上 ESP32-C6 原生 USB 通常不需要第三方 USB-UART 驱动。Wavesha
 
 通过文档构建、代码编译或烧录成功只能记录为“静态/构建/下载通过”，不能替代以上真机验收。
 
+## 真机验收记录
+
+**验收日期：** 2026-07-25
+
+**验收环境：**
+
+| 项目 | 值 |
+|---|---|
+| 固件来源 | 本仓库独立测试固件（非官方包） |
+| 框架 | PlatformIO `espressif32@7.0.1` / ESP-IDF 6.0.1 |
+| 板子定义 | `esp32-c6-devkitc-1` |
+| 串口 | `/dev/tty.usbmodem11411201` |
+| 芯片 | ESP32-C6FH4 rev v0.2 |
+| Flash | 4 MB (DIO, 80 MHz) |
+| RAM | 437 KiB available |
+
+### 已通过的验收项
+
+| 阶段 | 内容 | 结果 | 备注 |
+|---|---|---|---|
+| 最小固件 | 芯片识别为 ESP32-C6，Flash 4 MB | ✅ 通过 | boot log 确认 |
+| 最小固件 | 连续重启可枚举串口 | ✅ 通过 | 串口输出正常 |
+| 最小固件 | BOOT/RESET 进入应用模式 | ✅ 通过 | |
+| 显示 | ST7789 初始化 (172×320, RGB565, BGR) | ✅ 通过 | SPI 12 MHz |
+| 显示 | 彩条测试 (R/G/B/W/Y/C/M) | ✅ 通过 | Phase 1 |
+| 显示 | 文字显示 (8×8 bitmap font) | ✅ 通过 | Phase 2 |
+| 显示 | 棋盘格 (8×8 像素) | ✅ 通过 | Phase 3 |
+| 显示 | 纯白画面 (坏点检查) | ✅ 通过 | Phase 4 |
+| 显示 | 渐变测试 (蓝→红) | ✅ 通过 | Phase 5 |
+| 显示 | 背光 PWM 控制 (0-50%) | ✅ 通过 | LEDC 10-bit |
+
+### 未验收项
+
+| 项目 | 原因 |
+|---|---|
+| TF 卡读写 | 测试固件未包含 |
+| RGB LED | 测试固件未包含 |
+| Wi-Fi / BLE | 测试固件未包含 |
+| 长时间热行为 | 未进行 30 分钟以上测试 |
+| TF + LCD 共享 SPI 并发 | 未测试 |
+
+### 串口启动日志
+
+```
+ESP-ROM:esp32c6-20220919
+I (23) boot: ESP-IDF 6.0.1 2nd stage bootloader
+I (24) boot: chip revision: v0.2
+I (34) boot.esp32c6: SPI Flash Size : 8MB
+I (253) lcd_test: === Waveshare ESP32-C6-LCD-1.47 LCD Test ===
+I (549) lcd_test: LCD initialized
+I (549) lcd_test: Phase 1: Color bars
+I (3674) lcd_test: Phase 2: Text
+I (8346) lcd_test: Phase 3: Checkerboard
+I (12710) lcd_test: Phase 4: Solid white
+I (15794) lcd_test: Phase 5: Gradient
+I (16006) lcd_test: Test sequence complete
+```
+
+### 编译问题记录
+
+| 问题 | 解决方案 |
+|---|---|
+| Arduino 框架不支持 ESP32-C6 | 改用 ESP-IDF 框架 |
+| ESP-IDF 6.0.1 bootloader.ld 链接路径错误 | 手动创建 symlink `bootloader.ld -> bootloader/ld/bootloader.ld` |
+| Flash 大小默认 8 MB（实际 4 MB） | 在 `platformio.ini` 中不覆盖，使用板子默认配置 |
+
 ## 资料变更核对
 
 厂商页面会更新，示例 ZIP 没有稳定版本标签。复现问题时记录下载日期、ZIP SHA-256、ESP-IDF/Arduino/LVGL 版本、板 SKU、Flash ID 与日志。不要只写“最新版”。

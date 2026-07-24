@@ -1,0 +1,467 @@
+- generic [ref=f1e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=f1e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - link [ref=f1e7] [cursor=pointer]:
+          - /url: /support
+          - img "Waveshare Logo" [ref=f1e9]
+        - link "All Documents" [ref=f1e10] [cursor=pointer]:
+          - /url: /support
+        - button "ESP32" [ref=f1e12] [cursor=pointer]
+        - button "Raspberry Pi" [ref=f1e14] [cursor=pointer]
+        - button "Displays" [ref=f1e16] [cursor=pointer]
+        - button "More" [ref=f1e18] [cursor=pointer]
+      - generic [ref=f1e19]:
+        - link [ref=f1e20] [cursor=pointer]:
+          - /url: https://github.com/waveshareteam
+          - text: GitHub
+          - img "(opens in new tab)" [ref=f1e21]
+        - button "Switch between dark and light mode (currently light mode)" [ref=f1e24] [cursor=pointer]
+        - button "Search (Meta+k)" [ref=f1e28] [cursor=pointer]:
+          - generic [ref=f1e29]: Search
+          - generic [ref=f1e34]:
+            - generic [ref=f1e35]: ⌘
+            - generic [ref=f1e36]: K
+  - generic [ref=f1e39]:
+    - complementary [ref=f1e40]:
+      - generic [ref=f1e42]:
+        - navigation "Docs sidebar" [ref=f1e43]:
+          - list [ref=f1e44]:
+            - listitem [ref=f1e45]:
+              - link "ESP32-C6" [ref=f1e46] [cursor=pointer]:
+                - /url: /ESP32-C6
+            - listitem [ref=f1e48]:
+              - generic [ref=f1e49]:
+                - link "ESP32-C6-DEV-KIT-NX" [ref=f1e50] [cursor=pointer]:
+                  - /url: /ESP32-C6-DEV-KIT-N8
+                - button "Expand sidebar category 'ESP32-C6-DEV-KIT-NX'" [ref=f1e52] [cursor=pointer]
+            - listitem [ref=f1e53]:
+              - generic [ref=f1e54]:
+                - link "ESP32-C6-GEEK" [ref=f1e55] [cursor=pointer]:
+                  - /url: /ESP32-C6-GEEK
+                - button "Expand sidebar category 'ESP32-C6-GEEK'" [ref=f1e57] [cursor=pointer]
+            - listitem [ref=f1e58]:
+              - generic [ref=f1e59]:
+                - link "ESP32-C6-LCD-0.85" [ref=f1e60] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-0.85
+                - button "Expand sidebar category 'ESP32-C6-LCD-0.85'" [ref=f1e62] [cursor=pointer]
+            - listitem [ref=f1e63]:
+              - generic [ref=f1e64]:
+                - link "ESP32-C6-LCD-1.3" [ref=f1e65] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.3
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.3'" [ref=f1e67] [cursor=pointer]
+            - listitem [ref=f1e68]:
+              - generic [ref=f1e69]:
+                - link "ESP32-C6-LCD-1.47" [ref=f1e70] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.47
+                - button "Collapse sidebar category 'ESP32-C6-LCD-1.47'" [expanded] [ref=f1e72] [cursor=pointer]
+              - list [ref=f1e73]:
+                - listitem [ref=f1e74]:
+                  - link "Resources" [ref=f1e75] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Resources-And-Documents
+                - listitem [ref=f1e77]:
+                  - link "Working with Arduino" [ref=f1e78] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-Arduino
+                - listitem [ref=f1e80]:
+                  - link "Working with ESP-IDF" [ref=f1e81] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-ESP-IDF
+                - listitem [ref=f1e83]:
+                  - link "FAQ" [ref=f1e84] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/FAQ
+                - listitem [ref=f1e86]:
+                  - link "Support" [ref=f1e87] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Technical-Support
+            - listitem [ref=f1e89]:
+              - generic [ref=f1e90]:
+                - link "ESP32-C6-LCD-1.69" [ref=f1e91] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.69
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.69'" [ref=f1e93] [cursor=pointer]
+            - listitem [ref=f1e94]:
+              - generic [ref=f1e95]:
+                - link "ESP32-C6-LCD-1.9" [ref=f1e96] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.9
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.9'" [ref=f1e98] [cursor=pointer]
+            - listitem [ref=f1e99]:
+              - generic [ref=f1e100]:
+                - link "ESP32-C6-Pico" [ref=f1e101] [cursor=pointer]:
+                  - /url: /ESP32-C6-Pico
+                - button "Expand sidebar category 'ESP32-C6-Pico'" [ref=f1e103] [cursor=pointer]
+            - listitem [ref=f1e104]:
+              - generic [ref=f1e105]:
+                - link "ESP32-C6-Touch-AMOLED-1.32" [ref=f1e106] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.32
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.32'" [ref=f1e108] [cursor=pointer]
+            - listitem [ref=f1e109]:
+              - generic [ref=f1e110]:
+                - link "ESP32-C6-Touch-AMOLED-1.43" [ref=f1e111] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.43
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.43'" [ref=f1e113] [cursor=pointer]
+            - listitem [ref=f1e114]:
+              - generic [ref=f1e115]:
+                - link "ESP32-C6-Touch-AMOLED-1.64" [ref=f1e116] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.64
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.64'" [ref=f1e118] [cursor=pointer]
+            - listitem [ref=f1e119]:
+              - generic [ref=f1e120]:
+                - link "ESP32-C6-Touch-AMOLED-1.8" [ref=f1e121] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.8
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.8'" [ref=f1e123] [cursor=pointer]
+            - listitem [ref=f1e124]:
+              - generic [ref=f1e125]:
+                - link "ESP32-C6-Touch-AMOLED-2.06" [ref=f1e126] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-2.06
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-2.06'" [ref=f1e128] [cursor=pointer]
+            - listitem [ref=f1e129]:
+              - generic [ref=f1e130]:
+                - link "ESP32-C6-Touch-AMOLED-2.16" [ref=f1e131] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-2.16
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-2.16'" [ref=f1e133] [cursor=pointer]
+            - listitem [ref=f1e134]:
+              - generic [ref=f1e135]:
+                - link "ESP32-C6-Touch-LCD-1.47" [ref=f1e136] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.47
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.47'" [ref=f1e138] [cursor=pointer]
+            - listitem [ref=f1e139]:
+              - generic [ref=f1e140]:
+                - link "ESP32-C6-Touch-LCD-1.54" [ref=f1e141] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.54
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.54'" [ref=f1e143] [cursor=pointer]
+            - listitem [ref=f1e144]:
+              - generic [ref=f1e145]:
+                - link "ESP32-C6-Touch-LCD-1.69" [ref=f1e146] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.69
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.69'" [ref=f1e148] [cursor=pointer]
+            - listitem [ref=f1e149]:
+              - generic [ref=f1e150]:
+                - link "ESP32-C6-Touch-LCD-1.83" [ref=f1e151] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.83
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.83'" [ref=f1e153] [cursor=pointer]
+            - listitem [ref=f1e154]:
+              - generic [ref=f1e155]:
+                - link "ESP32-C6-Touch-LCD-2.8" [ref=f1e156] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-2.8
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-2.8'" [ref=f1e158] [cursor=pointer]
+            - listitem [ref=f1e159]:
+              - generic [ref=f1e160]:
+                - link "ESP32-C6-Zero" [ref=f1e161] [cursor=pointer]:
+                  - /url: /ESP32-C6-Zero
+                - button "Expand sidebar category 'ESP32-C6-Zero'" [ref=f1e163] [cursor=pointer]
+            - listitem [ref=f1e164]:
+              - generic [ref=f1e165]:
+                - link "ESP32-C6-Zero-B" [ref=f1e166] [cursor=pointer]:
+                  - /url: /ESP32-C6-Zero-B
+                - button "Expand sidebar category 'ESP32-C6-Zero-B'" [ref=f1e168] [cursor=pointer]
+            - listitem [ref=f1e169]:
+              - generic [ref=f1e170]:
+                - link "ESP32-C6-ePaper-1.54" [ref=f1e171] [cursor=pointer]:
+                  - /url: /ESP32-C6-ePaper-1.54
+                - button "Expand sidebar category 'ESP32-C6-ePaper-1.54'" [ref=f1e173] [cursor=pointer]
+        - button "Collapse sidebar" [ref=f1e174] [cursor=pointer]
+    - main [ref=f1e179]:
+      - generic [ref=f1e181]:
+        - generic [ref=f1e183]:
+          - article [ref=f1e184]:
+            - navigation "Breadcrumbs" [ref=f1e185]:
+              - list [ref=f1e186]:
+                - listitem [ref=f1e187]:
+                  - link "Home page" [ref=f1e188] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f1e191]:
+                  - link "ESP32-C6-LCD-1.47" [ref=f1e192] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47
+                - listitem [ref=f1e193]:
+                  - generic [ref=f1e194]: Resources
+            - generic [ref=f1e195]:
+              - heading "Resources" [level=1] [ref=f1e197]
+              - heading [level=2] [ref=f1e198]:
+                - strong [ref=f1e199]: 1. Hardware Resources
+                - link "Direct link to 1-hardware-resources" [ref=f1e200] [cursor=pointer]:
+                  - /url: "#1-hardware-resources"
+                  - text: "#"
+              - list [ref=f1e201]:
+                - listitem [ref=f1e202]:
+                  - strong [ref=f1e203]: Development Board Design File
+                  - list [ref=f1e204]:
+                    - listitem [ref=f1e205]:
+                      - link "Schematic Diagram" [ref=f1e206] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/ESP32-C6-LCD-1.47/ESP32-C6-LCD-1.47_schemetics.pdf
+                    - listitem [ref=f1e207]:
+                      - link "Project Drawing" [ref=f1e208] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/ESP32-C6-LCD-1.47/ESP32-C6-LCD-1.47-3D_Drawing.rar
+              - heading [level=2] [ref=f1e209]:
+                - strong [ref=f1e210]: 2. Technical Manuals
+                - link "Direct link to 2-technical-manuals" [ref=f1e211] [cursor=pointer]:
+                  - /url: "#2-technical-manuals"
+                  - text: "#"
+              - list [ref=f1e212]:
+                - listitem [ref=f1e213]:
+                  - strong [ref=f1e214]: ESP32-C6 Chip Official Manuals
+                  - list [ref=f1e215]:
+                    - listitem [ref=f1e216]:
+                      - link "Datasheet" [ref=f1e217] [cursor=pointer]:
+                        - /url: https://documentation.espressif.com/esp32-c6_datasheet_en.pdf
+                    - listitem [ref=f1e218]:
+                      - link "Technical Reference Manual" [ref=f1e219] [cursor=pointer]:
+                        - /url: https://documentation.espressif.com/esp32-c6_technical_reference_manual_en.pdf
+              - heading [level=2] [ref=f1e220]:
+                - strong [ref=f1e221]: 3. Software Development Resources
+                - link "Direct link to 3-software-development-resources" [ref=f1e222] [cursor=pointer]:
+                  - /url: "#3-software-development-resources"
+                  - text: "#"
+              - list [ref=f1e223]:
+                - listitem [ref=f1e224]:
+                  - paragraph [ref=f1e225]:
+                    - strong [ref=f1e226]: Example
+                  - list [ref=f1e227]:
+                    - listitem [ref=f1e228]:
+                      - link "ESP32-C6-LCD-1.47" [ref=f1e229] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/ESP32-C6-LCD-1.47/ESP32-C6-LCD-1.47-Demo.zip
+                - listitem [ref=f1e230]:
+                  - paragraph [ref=f1e231]:
+                    - strong [ref=f1e232]: Debugging Tools
+                  - list [ref=f1e233]:
+                    - listitem [ref=f1e234]:
+                      - text: "Serial Debugging:"
+                      - link "Serial and Network Debug Assistant" [ref=f1e235] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/common/Sscom5.13.1.zip
+                    - listitem [ref=f1e236]:
+                      - text: "Flash Download:"
+                      - link "Flash Debug Tool" [ref=f1e237] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/common/Flash_download_tool_3.9.5_0.zip
+                    - listitem [ref=f1e238]:
+                      - text: "Bluetooth Debugging:"
+                      - link "Bluetooth Debug Assistant" [ref=f1e239] [cursor=pointer]:
+                        - /url: https://files.waveshare.com/wiki/common/ESP32-C6_TO_BLEAssist.zip
+                - listitem [ref=f1e240]:
+                  - paragraph [ref=f1e241]:
+                    - strong [ref=f1e242]: Application Cases
+                  - list [ref=f1e243]:
+                    - listitem [ref=f1e244]:
+                      - link "ESP32-C6-LCD-1.47 LVGL Video Tutorial (External)" [ref=f1e245] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=KEcr22qZAVE&t=1s
+              - heading [level=2] [ref=f1e246]:
+                - strong [ref=f1e247]: 4. Community Showcase
+                - link "Direct link to 4-community-showcase" [ref=f1e248] [cursor=pointer]:
+                  - /url: "#4-community-showcase"
+                  - text: "#"
+              - generic [ref=f1e249]:
+                - generic [ref=f1e250]: info
+                - paragraph [ref=f1e255]: Check out these amazing projects created by the community! Please note these are independently maintained by their creators.
+              - heading [level=3] [ref=f1e256]:
+                - text: Volos Projects - How to Interact with Your UI - LVGL and Squareline Studio
+                - link "Direct link to Volos Projects - How to Interact with Your UI - LVGL and Squareline Studio" [ref=f1e257] [cursor=pointer]:
+                  - /url: "#volos-projects---how-to-interact-with-your-ui---lvgl-and-squareline-studio"
+                  - text: "#"
+              - iframe [ref=f1e260]:
+                - generic [ref=f2e1]:
+                  - generic "YouTube 视频播放器" [ref=f2e3]
+                  - generic [ref=f2e5]:
+                    - generic:
+                      - generic:
+                        - button "播放视频" [ref=f2e10] [cursor=pointer]
+                        - button "隐藏播放器控件" [ref=f2e12] [cursor=pointer]
+                        - generic [ref=f2e14]:
+                          - generic [ref=f2e19]:
+                            - generic [ref=f2e20]:
+                              - 'link "Waveshare ESP32-C6 : LVGL UI Tutorial with Squareline Studio" [ref=f2e21] [cursor=pointer]':
+                                - /url: https://www.youtube.com/watch?v=KEcr22qZAVE
+                              - link "Volos Projects" [ref=f2e22] [cursor=pointer]:
+                                - /url: /channel/UCit2rVgOvhyuAD-VH5H_IHg
+                            - generic [ref=f2e24]:
+                              - button [ref=f2e25] [cursor=pointer]
+                              - generic [ref=f2e27]:
+                                - generic: Volos Projects
+                                - generic: 12.5万位订阅者
+                          - generic [ref=f2e28]:
+                            - button "分享" [ref=f2e31] [cursor=pointer]
+                            - link "在 YouTube 上观看" [ref=f2e42] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=KEcr22qZAVE
+                              - generic [ref=f2e43]: 前往平台观看：
+              - list [ref=f1e261]:
+                - listitem [ref=f1e262]:
+                  - text: "Youtube:"
+                  - link "https://www.youtube.com/watch?v=KEcr22qZAVE" [ref=f1e263] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=KEcr22qZAVE
+                - listitem [ref=f1e264]:
+                  - text: "GitHub:"
+                  - link "https://github.com/VolosR/WaveShareC6lvglexample" [ref=f1e265] [cursor=pointer]:
+                    - /url: https://github.com/VolosR/WaveShareC6lvglexample
+              - heading [level=3] [ref=f1e266]:
+                - text: nishad2m8 - Flux Capacitor UI on Waveshare 1.47" ESP32C6 | EEZ Studio & LVGL
+                - link "Direct link to nishad2m8 - Flux Capacitor UI on Waveshare 1.47\" ESP32C6 | EEZ Studio & LVGL" [ref=f1e267] [cursor=pointer]:
+                  - /url: "#nishad2m8---flux-capacitor-ui-on-waveshare-147-esp32c6--eez-studio--lvgl"
+                  - text: "#"
+              - iframe [ref=f1e270]:
+                - generic [ref=f3e1]:
+                  - generic "YouTube 视频播放器" [ref=f3e3]
+                  - generic [ref=f3e5]:
+                    - generic:
+                      - generic:
+                        - button "播放视频" [ref=f3e10] [cursor=pointer]
+                        - button "隐藏播放器控件" [ref=f3e12] [cursor=pointer]
+                        - generic [ref=f3e14]:
+                          - generic [ref=f3e19]:
+                            - generic [ref=f3e20]:
+                              - 'link "Flux Capacitor UI on @waveshareelectronics 1.47'''' ESP32C6 | EEZ Studio & LVGL #fluxcapacitor" [ref=f3e21] [cursor=pointer]':
+                                - /url: https://www.youtube.com/watch?v=pDeoPXndeUQ
+                              - link "nishad2m8" [ref=f3e22] [cursor=pointer]:
+                                - /url: /channel/UCV_35rUyf4N5mHZXaxaFKiQ
+                            - generic [ref=f3e24]:
+                              - button [ref=f3e25] [cursor=pointer]
+                              - generic [ref=f3e27]:
+                                - generic: nishad2m8
+                                - generic: 4300位订阅者
+                          - generic [ref=f3e28]:
+                            - button "分享" [ref=f3e31] [cursor=pointer]
+                            - link "在 YouTube 上观看" [ref=f3e42] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=pDeoPXndeUQ
+                              - generic [ref=f3e43]: 前往平台观看：
+              - list [ref=f1e271]:
+                - listitem [ref=f1e272]:
+                  - text: "Youtube:"
+                  - link "https://www.youtube.com/watch?v=pDeoPXndeUQ" [ref=f1e273] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=pDeoPXndeUQ
+                - listitem [ref=f1e274]:
+                  - text: "GitHub:"
+                  - link "https://github.com/nishad2m8/Squareline-OBP/tree/master/WaveShare/esp32-c6-1.47" [ref=f1e275] [cursor=pointer]:
+                    - /url: https://github.com/nishad2m8/Squareline-OBP/tree/master/WaveShare/esp32-c6-1.47
+              - heading [level=3] [ref=f1e276]:
+                - text: The Last Outpost Workshop - SD Card Video Player & Crypto Price Monitor tutorial
+                - link "Direct link to The Last Outpost Workshop - SD Card Video Player & Crypto Price Monitor tutorial" [ref=f1e277] [cursor=pointer]:
+                  - /url: "#the-last-outpost-workshop---sd-card-video-player--crypto-price-monitor-tutorial"
+                  - text: "#"
+              - list [ref=f1e278]:
+                - listitem [ref=f1e279]:
+                  - text: "Youtube:"
+                  - link "https://www.youtube.com/watch?v=JqQEG0eipic" [ref=f1e280] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=JqQEG0eipic
+                - listitem [ref=f1e281]:
+                  - text: "GitHub:"
+                  - link "https://github.com/thelastoutpostworkshop/ESP32-C6-LCD-1.47_LVGL9_Crypto_Monitor" [ref=f1e282] [cursor=pointer]:
+                    - /url: https://github.com/thelastoutpostworkshop/ESP32-C6-LCD-1.47_LVGL9_Crypto_Monitor
+                - listitem [ref=f1e283]:
+                  - link "https://github.com/thelastoutpostworkshop/ESP32-C6-LCD-1.47_video_player" [ref=f1e284] [cursor=pointer]:
+                    - /url: https://github.com/thelastoutpostworkshop/ESP32-C6-LCD-1.47_video_player
+              - heading [level=3] [ref=f1e285]:
+                - text: moononournation - Loki Miss Minutes clock
+                - link "Direct link to moononournation - Loki Miss Minutes clock" [ref=f1e286] [cursor=pointer]:
+                  - /url: "#moononournation---loki-miss-minutes-clock"
+                  - text: "#"
+              - iframe [ref=f1e289]:
+                - generic [ref=f4e1]:
+                  - generic "YouTube 视频播放器" [ref=f4e3]
+                  - generic [ref=f4e5]:
+                    - generic:
+                      - generic:
+                        - button "播放视频" [ref=f4e10] [cursor=pointer]
+                        - button "隐藏播放器控件" [ref=f4e12] [cursor=pointer]
+                        - generic [ref=f4e14]:
+                          - generic [ref=f4e19]:
+                            - generic [ref=f4e20]:
+                              - link "Loki Miss Minutes clock" [ref=f4e21] [cursor=pointer]:
+                                - /url: https://www.youtube.com/watch?v=e-Z9bq2xT2E
+                              - link "moononournation" [ref=f4e22] [cursor=pointer]:
+                                - /url: /channel/UC7ZmYQqXn34LXuzXESfKJkQ
+                            - generic [ref=f4e24]:
+                              - button [ref=f4e25] [cursor=pointer]
+                              - generic [ref=f4e27]:
+                                - generic: moononournation
+                                - generic: 1740位订阅者
+                          - generic [ref=f4e28]:
+                            - button "分享" [ref=f4e31] [cursor=pointer]
+                            - link "在 YouTube 上观看" [ref=f4e42] [cursor=pointer]:
+                              - /url: https://www.youtube.com/watch?v=e-Z9bq2xT2E
+                              - generic [ref=f4e43]: 前往平台观看：
+              - list [ref=f1e290]:
+                - listitem [ref=f1e291]:
+                  - text: "Youtube:"
+                  - link "https://www.youtube.com/watch?v=e-Z9bq2xT2E" [ref=f1e292] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=e-Z9bq2xT2E
+                - listitem [ref=f1e293]:
+                  - text: "Guide:"
+                  - link "https://www.instructables.com/GIF-Animation-Clock/" [ref=f1e294] [cursor=pointer]:
+                    - /url: https://www.instructables.com/GIF-Animation-Clock/
+                - listitem [ref=f1e295]:
+                  - text: "GitHub:"
+                  - link "https://github.com/moononournation/animation_clock" [ref=f1e296] [cursor=pointer]:
+                    - /url: https://github.com/moononournation/animation_clock
+            - link "Give Feedback" [ref=f1e298] [cursor=pointer]:
+              - /url: https://docs.google.com/forms/d/e/1FAIpQLSfayJEZ5J-dp-3Wq_dkWsVRhNuQ6C79_GNV62mYuFW8Mj6U8Q/viewform?entry.803599728=https%3A%2F%2Fdocs.waveshare.com%2FESP32-C6-LCD-1.47%2FResources-And-Documents
+          - navigation "Docs pages" [ref=f1e301]:
+            - link "Previous « ESP32-C6-LCD-1.47" [ref=f1e302] [cursor=pointer]:
+              - /url: /ESP32-C6-LCD-1.47
+              - generic [ref=f1e303]: Previous
+              - generic [ref=f1e304]: « ESP32-C6-LCD-1.47
+            - link "Next Working with Arduino »" [ref=f1e305] [cursor=pointer]:
+              - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-Arduino
+              - generic [ref=f1e306]: Next
+              - generic [ref=f1e307]: Working with Arduino »
+        - list [ref=f1e310]:
+          - listitem [ref=f1e311]:
+            - link [ref=f1e312] [cursor=pointer]:
+              - /url: "#1-hardware-resources"
+              - strong [ref=f1e313]: 1. Hardware Resources
+          - listitem [ref=f1e314]:
+            - link [ref=f1e315] [cursor=pointer]:
+              - /url: "#2-technical-manuals"
+              - strong [ref=f1e316]: 2. Technical Manuals
+          - listitem [ref=f1e317]:
+            - link [ref=f1e318] [cursor=pointer]:
+              - /url: "#3-software-development-resources"
+              - strong [ref=f1e319]: 3. Software Development Resources
+          - listitem [ref=f1e320]:
+            - link [ref=f1e321] [cursor=pointer]:
+              - /url: "#4-community-showcase"
+              - strong [ref=f1e322]: 4. Community Showcase
+            - list [ref=f1e323]:
+              - listitem [ref=f1e324]:
+                - link "Volos Projects - How to Interact with Your UI - LVGL and Squareline Studio" [ref=f1e325] [cursor=pointer]:
+                  - /url: "#volos-projects---how-to-interact-with-your-ui---lvgl-and-squareline-studio"
+              - listitem [ref=f1e326]:
+                - link "nishad2m8 - Flux Capacitor UI on Waveshare 1.47\" ESP32C6 | EEZ Studio & LVGL" [ref=f1e327] [cursor=pointer]:
+                  - /url: "#nishad2m8---flux-capacitor-ui-on-waveshare-147-esp32c6--eez-studio--lvgl"
+              - listitem [ref=f1e328]:
+                - link "The Last Outpost Workshop - SD Card Video Player & Crypto Price Monitor tutorial" [ref=f1e329] [cursor=pointer]:
+                  - /url: "#the-last-outpost-workshop---sd-card-video-player--crypto-price-monitor-tutorial"
+              - listitem [ref=f1e330]:
+                - link "moononournation - Loki Miss Minutes clock" [ref=f1e331] [cursor=pointer]:
+                  - /url: "#moononournation---loki-miss-minutes-clock"
+  - contentinfo [ref=f1e332]:
+    - generic [ref=f1e333]:
+      - generic [ref=f1e334]:
+        - generic [ref=f1e335]:
+          - generic [ref=f1e336]: Resources
+          - list [ref=f1e337]:
+            - listitem [ref=f1e338]:
+              - link "Tutorials" [ref=f1e339] [cursor=pointer]:
+                - /url: /ESP32-Tutorials-Intro
+            - listitem [ref=f1e340]:
+              - link [ref=f1e341] [cursor=pointer]:
+                - /url: https://github.com/waveshareteam
+                - text: GitHub
+                - img "(opens in new tab)" [ref=f1e342]
+        - generic [ref=f1e344]:
+          - generic [ref=f1e345]: Information
+          - list [ref=f1e346]:
+            - listitem [ref=f1e347]:
+              - link [ref=f1e348] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCV_48_r0rplaYB-VqxXB04g
+                - text: Youtube
+                - img "(opens in new tab)" [ref=f1e349]
+        - generic [ref=f1e351]:
+          - generic [ref=f1e352]: About Waveshare
+          - list [ref=f1e353]:
+            - listitem [ref=f1e354]:
+              - link [ref=f1e355] [cursor=pointer]:
+                - /url: https://www.waveshare.com/about_us
+                - text: About Us
+                - img "(opens in new tab)" [ref=f1e356]
+            - listitem [ref=f1e358]:
+              - link [ref=f1e359] [cursor=pointer]:
+                - /url: https://www.waveshare.com/contact_us
+                - text: Contact Us
+                - img "(opens in new tab)" [ref=f1e360]
+      - generic [ref=f1e362]: Copyright © 2026 Waveshare

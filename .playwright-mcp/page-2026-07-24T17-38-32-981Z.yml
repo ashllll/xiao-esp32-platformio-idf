@@ -1,0 +1,444 @@
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /support
+          - img "Waveshare Logo" [ref=e9]
+        - link "All Documents" [ref=e10] [cursor=pointer]:
+          - /url: /support
+        - button "ESP32" [ref=e12] [cursor=pointer]
+        - button "Raspberry Pi" [ref=e14] [cursor=pointer]
+        - button "Displays" [ref=e16] [cursor=pointer]
+        - button "More" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]:
+        - link [ref=e20] [cursor=pointer]:
+          - /url: https://github.com/waveshareteam
+          - text: GitHub
+          - img "(opens in new tab)" [ref=e21]
+        - button "Switch between dark and light mode (currently system mode)" [disabled] [ref=e24]
+        - button "Search (Meta+k)" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: Search
+  - generic [ref=e36]:
+    - complementary [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "Docs sidebar" [ref=e40]:
+          - list [ref=e41]:
+            - listitem [ref=e42]:
+              - link "ESP32-C6" [ref=e43] [cursor=pointer]:
+                - /url: /ESP32-C6
+            - listitem [ref=e45]:
+              - generic [ref=e46]:
+                - link "ESP32-C6-DEV-KIT-NX" [ref=e47] [cursor=pointer]:
+                  - /url: /ESP32-C6-DEV-KIT-N8
+                - button "Expand sidebar category 'ESP32-C6-DEV-KIT-NX'" [ref=e49] [cursor=pointer]
+            - listitem [ref=e50]:
+              - generic [ref=e51]:
+                - link "ESP32-C6-GEEK" [ref=e52] [cursor=pointer]:
+                  - /url: /ESP32-C6-GEEK
+                - button "Expand sidebar category 'ESP32-C6-GEEK'" [ref=e54] [cursor=pointer]
+            - listitem [ref=e55]:
+              - generic [ref=e56]:
+                - link "ESP32-C6-LCD-0.85" [ref=e57] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-0.85
+                - button "Expand sidebar category 'ESP32-C6-LCD-0.85'" [ref=e59] [cursor=pointer]
+            - listitem [ref=e60]:
+              - generic [ref=e61]:
+                - link "ESP32-C6-LCD-1.3" [ref=e62] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.3
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.3'" [ref=e64] [cursor=pointer]
+            - listitem [ref=e65]:
+              - generic [ref=e66]:
+                - link "ESP32-C6-LCD-1.47" [ref=e67] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.47
+                - button "Collapse sidebar category 'ESP32-C6-LCD-1.47'" [expanded] [ref=e69] [cursor=pointer]
+              - list [ref=e70]:
+                - listitem [ref=e71]:
+                  - link "Resources" [ref=e72] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Resources-And-Documents
+                - listitem [ref=e74]:
+                  - link "Working with Arduino" [ref=e75] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-Arduino
+                - listitem [ref=e77]:
+                  - link "Working with ESP-IDF" [ref=e78] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-ESP-IDF
+                - listitem [ref=e80]:
+                  - link "FAQ" [ref=e81] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/FAQ
+                - listitem [ref=e83]:
+                  - link "Support" [ref=e84] [cursor=pointer]:
+                    - /url: /ESP32-C6-LCD-1.47/Technical-Support
+            - listitem [ref=e86]:
+              - generic [ref=e87]:
+                - link "ESP32-C6-LCD-1.69" [ref=e88] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.69
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.69'" [ref=e90] [cursor=pointer]
+            - listitem [ref=e91]:
+              - generic [ref=e92]:
+                - link "ESP32-C6-LCD-1.9" [ref=e93] [cursor=pointer]:
+                  - /url: /ESP32-C6-LCD-1.9
+                - button "Expand sidebar category 'ESP32-C6-LCD-1.9'" [ref=e95] [cursor=pointer]
+            - listitem [ref=e96]:
+              - generic [ref=e97]:
+                - link "ESP32-C6-Pico" [ref=e98] [cursor=pointer]:
+                  - /url: /ESP32-C6-Pico
+                - button "Expand sidebar category 'ESP32-C6-Pico'" [ref=e100] [cursor=pointer]
+            - listitem [ref=e101]:
+              - generic [ref=e102]:
+                - link "ESP32-C6-Touch-AMOLED-1.32" [ref=e103] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.32
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.32'" [ref=e105] [cursor=pointer]
+            - listitem [ref=e106]:
+              - generic [ref=e107]:
+                - link "ESP32-C6-Touch-AMOLED-1.43" [ref=e108] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.43
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.43'" [ref=e110] [cursor=pointer]
+            - listitem [ref=e111]:
+              - generic [ref=e112]:
+                - link "ESP32-C6-Touch-AMOLED-1.64" [ref=e113] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.64
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.64'" [ref=e115] [cursor=pointer]
+            - listitem [ref=e116]:
+              - generic [ref=e117]:
+                - link "ESP32-C6-Touch-AMOLED-1.8" [ref=e118] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-1.8
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-1.8'" [ref=e120] [cursor=pointer]
+            - listitem [ref=e121]:
+              - generic [ref=e122]:
+                - link "ESP32-C6-Touch-AMOLED-2.06" [ref=e123] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-2.06
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-2.06'" [ref=e125] [cursor=pointer]
+            - listitem [ref=e126]:
+              - generic [ref=e127]:
+                - link "ESP32-C6-Touch-AMOLED-2.16" [ref=e128] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-AMOLED-2.16
+                - button "Expand sidebar category 'ESP32-C6-Touch-AMOLED-2.16'" [ref=e130] [cursor=pointer]
+            - listitem [ref=e131]:
+              - generic [ref=e132]:
+                - link "ESP32-C6-Touch-LCD-1.47" [ref=e133] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.47
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.47'" [ref=e135] [cursor=pointer]
+            - listitem [ref=e136]:
+              - generic [ref=e137]:
+                - link "ESP32-C6-Touch-LCD-1.54" [ref=e138] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.54
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.54'" [ref=e140] [cursor=pointer]
+            - listitem [ref=e141]:
+              - generic [ref=e142]:
+                - link "ESP32-C6-Touch-LCD-1.69" [ref=e143] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.69
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.69'" [ref=e145] [cursor=pointer]
+            - listitem [ref=e146]:
+              - generic [ref=e147]:
+                - link "ESP32-C6-Touch-LCD-1.83" [ref=e148] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-1.83
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-1.83'" [ref=e150] [cursor=pointer]
+            - listitem [ref=e151]:
+              - generic [ref=e152]:
+                - link "ESP32-C6-Touch-LCD-2.8" [ref=e153] [cursor=pointer]:
+                  - /url: /ESP32-C6-Touch-LCD-2.8
+                - button "Expand sidebar category 'ESP32-C6-Touch-LCD-2.8'" [ref=e155] [cursor=pointer]
+            - listitem [ref=e156]:
+              - generic [ref=e157]:
+                - link "ESP32-C6-Zero" [ref=e158] [cursor=pointer]:
+                  - /url: /ESP32-C6-Zero
+                - button "Expand sidebar category 'ESP32-C6-Zero'" [ref=e160] [cursor=pointer]
+            - listitem [ref=e161]:
+              - generic [ref=e162]:
+                - link "ESP32-C6-Zero-B" [ref=e163] [cursor=pointer]:
+                  - /url: /ESP32-C6-Zero-B
+                - button "Expand sidebar category 'ESP32-C6-Zero-B'" [ref=e165] [cursor=pointer]
+            - listitem [ref=e166]:
+              - generic [ref=e167]:
+                - link "ESP32-C6-ePaper-1.54" [ref=e168] [cursor=pointer]:
+                  - /url: /ESP32-C6-ePaper-1.54
+                - button "Expand sidebar category 'ESP32-C6-ePaper-1.54'" [ref=e170] [cursor=pointer]
+        - button "Collapse sidebar" [ref=e171] [cursor=pointer]
+    - main [ref=e176]:
+      - generic [ref=e178]:
+        - generic [ref=e180]:
+          - article [ref=e181]:
+            - navigation "Breadcrumbs" [ref=e182]:
+              - list [ref=e183]:
+                - listitem [ref=e184]:
+                  - link "Home page" [ref=e185] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=e188]:
+                  - generic [ref=e189]: ESP32-C6-LCD-1.47
+            - generic [ref=e190]:
+              - heading "ESP32-C6-LCD-1.47" [level=1] [ref=e192]
+              - generic [ref=e193]:
+                - tablist [ref=e194]:
+                  - tab "ESP32-C6-LCD-1.47" [ref=e195] [cursor=pointer]
+                  - tab "ESP32-C6-LCD-1.47-M (With pin header)" [selected] [ref=e196] [cursor=pointer]
+                - tabpanel [ref=e198]:
+                  - link [ref=e200] [cursor=pointer]:
+                    - /url: https://www.waveshare.com/esp32-c6-lcd-1.47.htm?sku=30381
+              - generic [ref=e202]:
+                - generic [ref=e203]: Note
+                - paragraph [ref=e208]: Do not remove the screen when soldering the pin headers. Tilt the soldering iron and solder the headers directly.
+              - generic [ref=e209]:
+                - generic [ref=e210]: Note
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]: Keep the screen brightness at 50% or lower during use, and do not operate the screen at full brightness for extended periods. Excessive brightness increases the screen temperature, and overheating may cause dark shadows on the screen and affect normal display.
+                  - paragraph [ref=e216]: If the display is already abnormal, allow the development board to cool down, then flash a program with a lower brightness setting.
+              - heading [level=2] [ref=e217]:
+                - text: Product Overview
+                - link "Direct link to Product Overview" [ref=e218] [cursor=pointer]:
+                  - /url: "#product-overview"
+                  - text: "#"
+              - paragraph [ref=e219]: The ESP32-C6-LCD-1.47 is a microcontroller development board that supports 2.4 GHz Wi-Fi 6 and BLE 5. It integrates 4 MB Flash and has onboard 1.47-inch LCD screen, can smoothly run GUI programs such as LVGL. Combined with various peripheral interfaces, it is suitable for the quick development of the HMI and other ESP32-C6 applications.
+              - table [ref=e220]:
+                - rowgroup [ref=e221]:
+                  - row [ref=e222]:
+                    - columnheader "SKU" [ref=e223]
+                    - columnheader "Product" [ref=e224]
+                - rowgroup [ref=e225]:
+                  - row [ref=e226]:
+                    - cell "28563" [ref=e227]
+                    - cell "ESP32-C6-LCD-1.47" [ref=e228]
+                  - row [ref=e229]:
+                    - cell "30381" [ref=e230]
+                    - cell "ESP32-C6-LCD-1.47-M" [ref=e231]
+              - heading [level=2] [ref=e232]:
+                - text: Features
+                - link "Direct link to Features" [ref=e233] [cursor=pointer]:
+                  - /url: "#features"
+                  - text: "#"
+              - list [ref=e234]:
+                - listitem [ref=e235]: Equipped with a high-performance RISC-V 32-bit processor and a low-power RISC-V 32-bit processor; the high-performance processor clock is up to 160 MHz and the low-power processor clock is up to 20 MHz
+                - listitem [ref=e236]: Supports 2.4 GHz Wi-Fi 6 (802.11 ax/b/g/n) and Bluetooth 5 (BLE), with onboard antenna
+                - listitem [ref=e237]: Onboard 320 KB ROM, 512 KB HP SRAM, 16 KB LP SRAM, and 4 MB flash
+                - listitem [ref=e238]: Onboard 1.47-inch LCD screen, 172 × 320 resolution, 262K colors
+                - listitem [ref=e239]: Most GPIOs are broken out, and full-speed USB serial port is integrated
+                - listitem [ref=e240]: Onboard TF card slot for external TF card storage of images or files
+                - listitem [ref=e241]: Supports flexible clock control and various power modes for low-power scenarios
+                - listitem [ref=e242]: Onboard RGB color LED, which works together with the transparent acrylic interlayer to create cool lighting effects
+              - heading [level=2] [ref=e243]:
+                - text: Onboard Resources
+                - link "Direct link to Onboard Resources" [ref=e244] [cursor=pointer]:
+                  - /url: "#onboard-resources"
+                  - text: "#"
+              - paragraph [ref=e246]:
+                - img "ESP32-C6-LCD-1.47-3.webp" [ref=e247]
+              - list [ref=e248]:
+                - listitem [ref=e249]:
+                  - strong [ref=e250]: ESP32-C6FH4
+                - listitem [ref=e251]:
+                  - strong [ref=e252]: ME6217C33M5G
+                  - text: Low dropout LDO, current (Max) 800 mA
+                - listitem [ref=e253]:
+                  - strong [ref=e254]: TF card slot
+                - listitem [ref=e255]:
+                  - strong [ref=e256]: Onboard ceramic antenna
+                - listitem [ref=e257]:
+                  - strong [ref=e258]: BOOT button
+                - listitem [ref=e259]:
+                  - strong [ref=e260]: RESET Button
+              - heading [level=2] [ref=e261]:
+                - text: Interface Introduction
+                - link "Direct link to Interface Introduction" [ref=e262] [cursor=pointer]:
+                  - /url: "#interface-introduction"
+                  - text: "#"
+              - paragraph [ref=e264]:
+                - img "ESP32-C6-LCD-1.47-4.webp" [ref=e265]
+              - list [ref=e266]:
+                - listitem [ref=e267]:
+                  - paragraph [ref=e268]: LCD
+                  - table [ref=e269]:
+                    - rowgroup [ref=e270]:
+                      - row [ref=e271]:
+                        - columnheader "LCD Pin" [ref=e272]
+                        - columnheader "ESP32C6" [ref=e273]
+                    - rowgroup [ref=e274]:
+                      - row [ref=e275]:
+                        - cell "MOSI" [ref=e276]
+                        - cell "GPIO6" [ref=e277]
+                      - row [ref=e278]:
+                        - cell "SCLK" [ref=e279]
+                        - cell "GPIO7" [ref=e280]
+                      - row [ref=e281]:
+                        - cell "LCD_CS" [ref=e282]
+                        - cell "GPIO14" [ref=e283]
+                      - row [ref=e284]:
+                        - cell "LCD_DC" [ref=e285]
+                        - cell "GPIO15" [ref=e286]
+                      - row [ref=e287]:
+                        - cell "LCD_RST" [ref=e288]
+                        - cell "GPIO21" [ref=e289]
+                      - row [ref=e290]:
+                        - cell "LCD_BL" [ref=e291]
+                        - cell "GPIO22" [ref=e292]
+                - listitem [ref=e293]:
+                  - paragraph [ref=e294]: RGB LED
+                  - table [ref=e295]:
+                    - rowgroup [ref=e296]:
+                      - row [ref=e297]:
+                        - columnheader "RGB LED" [ref=e298]
+                        - columnheader "ESP32C6" [ref=e299]
+                    - rowgroup [ref=e300]:
+                      - row [ref=e301]:
+                        - cell "RGB_Control" [ref=e302]
+                        - cell "GPIO8" [ref=e303]
+                - listitem [ref=e304]:
+                  - paragraph [ref=e305]: TF Card
+                  - table [ref=e306]:
+                    - rowgroup [ref=e307]:
+                      - row [ref=e308]:
+                        - columnheader "TF Card" [ref=e309]
+                        - columnheader "ESP32C6" [ref=e310]
+                    - rowgroup [ref=e311]:
+                      - row [ref=e312]:
+                        - cell "MISO" [ref=e313]
+                        - cell "GPIO5" [ref=e314]
+                      - row [ref=e315]:
+                        - cell "MOSI" [ref=e316]
+                        - cell "GPIO6" [ref=e317]
+                      - row [ref=e318]:
+                        - cell "SCLK" [ref=e319]
+                        - cell "GPIO7" [ref=e320]
+                      - row [ref=e321]:
+                        - cell "CS" [ref=e322]
+                        - cell "GPIO4" [ref=e323]
+                      - row [ref=e324]:
+                        - cell "SD_D1" [ref=e325]
+                        - cell "NC" [ref=e326]
+                      - row [ref=e327]:
+                        - cell "SD_D2" [ref=e328]
+                        - cell "NC" [ref=e329]
+              - heading [level=2] [ref=e330]:
+                - text: Dimensions
+                - link "Direct link to Dimensions" [ref=e331] [cursor=pointer]:
+                  - /url: "#dimensions"
+                  - text: "#"
+              - paragraph [ref=e333]:
+                - img "ESP32-C6-LCD-1.47-5.webp" [ref=e334]
+              - paragraph [ref=e336]:
+                - img "ESP32-C6-LCD-1.47-Dimensions.webp" [ref=e337]
+              - heading [level=2] [ref=e338]:
+                - text: Specifications
+                - link "Direct link to Specifications" [ref=e339] [cursor=pointer]:
+                  - /url: "#specifications"
+                  - text: "#"
+              - table [ref=e340]:
+                - rowgroup [ref=e341]:
+                  - row [ref=e342]:
+                    - columnheader "Parameter" [ref=e343]
+                    - columnheader "Value" [ref=e344]
+                - rowgroup [ref=e345]:
+                  - row [ref=e346]:
+                    - cell "Interface" [ref=e347]
+                    - cell "USB Type-C" [ref=e348]
+                  - row [ref=e349]:
+                    - cell "Main Controller" [ref=e350]
+                    - cell "ESP32-C6" [ref=e351]
+                  - row [ref=e352]:
+                    - cell "Screen Type" [ref=e353]
+                    - cell "TFT" [ref=e354]
+                  - row [ref=e355]:
+                    - cell "Screen Controller" [ref=e356]
+                    - 'cell "Display: ST7789" [ref=e357]'
+                  - row [ref=e358]:
+                    - cell "Onboard Device" [ref=e359]
+                    - cell "Micro SD" [ref=e360]
+              - heading [level=2] [ref=e361]:
+                - text: Development Methods
+                - link "Direct link to Development Methods" [ref=e362] [cursor=pointer]:
+                  - /url: "#development-methods"
+                  - text: "#"
+              - generic [ref=e363]:
+                - generic [ref=e364]: Note
+                - generic [ref=e368]:
+                  - paragraph [ref=e369]: Keep the screen brightness at 50% or lower during use, and do not operate the screen at full brightness for extended periods. Excessive brightness increases the screen temperature, and overheating may cause dark shadows on the screen and affect normal display.
+                  - paragraph [ref=e370]: If the display is already abnormal, allow the development board to cool down, then flash a program with a lower brightness setting.
+              - paragraph [ref=e371]: "The ESP32-C6-LCD-1.47 supports two development frameworks: Arduino IDE and ESP-IDF, offering flexibility for developers. You can choose the appropriate development tool based on project requirements and personal preference."
+              - paragraph [ref=e372]: Arduino generally offers a gentler learning curve and may be more approachable for beginners and hobbyists. ESP-IDF provides advanced tooling and finer control over system behavior, making it better suited to complex projects and applications with demanding performance requirements.
+              - list [ref=e373]:
+                - listitem [ref=e374]:
+                  - paragraph [ref=e375]:
+                    - strong [ref=e376]: Arduino IDE
+                    - text: is a convenient, flexible, and easy-to-use open-source electronics prototyping platform. It requires minimal foundational knowledge, allowing for rapid development after a short learning period. Arduino has a huge global user community, providing a vast amount of open-source code, project examples, and tutorials, as well as a rich library ecosystem that encapsulates complex functions, enabling developers to implement various features rapidly. You can refer to the
+                    - strong [ref=e377]:
+                      - link "Working with Arduino" [ref=e378] [cursor=pointer]:
+                        - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-Arduino
+                    - text: to complete the initial setup, and the tutorial also provides related example programs for reference.
+                - listitem [ref=e379]:
+                  - paragraph [ref=e380]:
+                    - strong [ref=e381]: ESP-IDF
+                    - text: ", short for Espressif IoT Development Framework, is a professional development framework launched by Espressif Systems for its ESP series of chips. It is based on C language development and includes compilers, debuggers, flashing tools, etc. It supports development via command line or integrated development environments (such as Visual Studio Code with the Espressif IDF plugin), which provides features like code navigation, project management, and debugging. We recommend using VS Code for development. For the specific configuration process, please refer to the"
+                    - strong [ref=e382]:
+                      - link "Working with ESP-IDF" [ref=e383] [cursor=pointer]:
+                        - /url: /ESP32-C6-LCD-1.47/Development-Environment-Setup-ESP-IDF
+                    - text: . The tutorial also provides relevant example programs for reference.
+            - link "Give Feedback" [ref=e385] [cursor=pointer]:
+              - /url: https://docs.google.com/forms/d/e/1FAIpQLSfayJEZ5J-dp-3Wq_dkWsVRhNuQ6C79_GNV62mYuFW8Mj6U8Q/viewform
+          - navigation "Docs pages" [ref=e388]:
+            - link "Previous « Support" [ref=e389] [cursor=pointer]:
+              - /url: /ESP32-C6-LCD-1.3/Technical-Support
+              - generic [ref=e390]: Previous
+              - generic [ref=e391]: « Support
+            - link "Next Resources »" [ref=e392] [cursor=pointer]:
+              - /url: /ESP32-C6-LCD-1.47/Resources-And-Documents
+              - generic [ref=e393]: Next
+              - generic [ref=e394]: Resources »
+        - list [ref=e397]:
+          - listitem [ref=e398]:
+            - link "Product Overview" [ref=e399] [cursor=pointer]:
+              - /url: "#product-overview"
+          - listitem [ref=e400]:
+            - link "Features" [ref=e401] [cursor=pointer]:
+              - /url: "#features"
+          - listitem [ref=e402]:
+            - link "Onboard Resources" [ref=e403] [cursor=pointer]:
+              - /url: "#onboard-resources"
+          - listitem [ref=e404]:
+            - link "Interface Introduction" [ref=e405] [cursor=pointer]:
+              - /url: "#interface-introduction"
+          - listitem [ref=e406]:
+            - link "Dimensions" [ref=e407] [cursor=pointer]:
+              - /url: "#dimensions"
+          - listitem [ref=e408]:
+            - link "Specifications" [ref=e409] [cursor=pointer]:
+              - /url: "#specifications"
+          - listitem [ref=e410]:
+            - link "Development Methods" [ref=e411] [cursor=pointer]:
+              - /url: "#development-methods"
+  - contentinfo [ref=e412]:
+    - generic [ref=e413]:
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - generic [ref=e416]: Resources
+          - list [ref=e417]:
+            - listitem [ref=e418]:
+              - link "Tutorials" [ref=e419] [cursor=pointer]:
+                - /url: /ESP32-Tutorials-Intro
+            - listitem [ref=e420]:
+              - link [ref=e421] [cursor=pointer]:
+                - /url: https://github.com/waveshareteam
+                - text: GitHub
+                - img "(opens in new tab)" [ref=e422]
+        - generic [ref=e424]:
+          - generic [ref=e425]: Information
+          - list [ref=e426]:
+            - listitem [ref=e427]:
+              - link [ref=e428] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCV_48_r0rplaYB-VqxXB04g
+                - text: Youtube
+                - img "(opens in new tab)" [ref=e429]
+        - generic [ref=e431]:
+          - generic [ref=e432]: About Waveshare
+          - list [ref=e433]:
+            - listitem [ref=e434]:
+              - link [ref=e435] [cursor=pointer]:
+                - /url: https://www.waveshare.com/about_us
+                - text: About Us
+                - img "(opens in new tab)" [ref=e436]
+            - listitem [ref=e438]:
+              - link [ref=e439] [cursor=pointer]:
+                - /url: https://www.waveshare.com/contact_us
+                - text: Contact Us
+                - img "(opens in new tab)" [ref=e440]
+      - generic [ref=e442]: Copyright © 2026 Waveshare

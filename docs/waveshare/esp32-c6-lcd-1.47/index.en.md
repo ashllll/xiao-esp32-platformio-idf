@@ -32,7 +32,7 @@ The panel advertises 262K colors, while the vendor examples transfer RGB565. A f
 
 - This repository's `xiao_esp32c6` board definition and pins are for XIAO only.
 - The vendor bundle contains separate Arduino and native ESP-IDF projects; Arduino APIs do not belong in this repository's pure ESP-IDF application.
-- Sources and builds can be checked without hardware, but they do not prove display, card, RF or thermal behavior.
+- ~~Sources and builds can be checked without hardware, but they do not prove display, card, RF or thermal behavior.~~ **Updated 2026-07-25:** LCD real-hardware acceptance is now complete (see [Troubleshooting and acceptance](troubleshooting.md#real-hardware-acceptance-record)). TF card, RF and thermal tests are still pending.
 
 ## Official entry points
 
