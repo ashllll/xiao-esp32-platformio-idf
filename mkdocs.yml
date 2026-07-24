@@ -70,6 +70,12 @@ plugins:
             OPT101 一手资料核对: OPT101 primary-source review
             ADS1115 与 NTC100K 一手资料核对: ADS1115 and NTC100K primary-source review
             XIAO/工具链文档审查: XIAO/toolchain documentation audit
+            Waveshare ESP32-C6-LCD-1.47 一手资料核对: Waveshare ESP32-C6-LCD-1.47 primary-source review
+            Waveshare 开发板: Waveshare boards
+            ESP32-C6-LCD-1.47 总览: ESP32-C6-LCD-1.47 overview
+            硬件与引脚: Hardware and pinout
+            开发环境与示例: Development and examples
+            故障排查与验收: Troubleshooting and acceptance
 
 nav:
   - 首页: index.md
@@ -99,6 +105,12 @@ nav:
       - GPIO、ADC 与 PWM: peripherals/gpio-adc-pwm.md
   - 无线连接: wireless/index.md
   - 调试: debugging/index.md
+  - Waveshare 开发板:
+      - ESP32-C6-LCD-1.47:
+          - ESP32-C6-LCD-1.47 总览: waveshare/esp32-c6-lcd-1.47/index.md
+          - 硬件与引脚: waveshare/esp32-c6-lcd-1.47/hardware.md
+          - 开发环境与示例: waveshare/esp32-c6-lcd-1.47/development.md
+          - 故障排查与验收: waveshare/esp32-c6-lcd-1.47/troubleshooting.md
   - 参考资料:
       - 资料索引: reference/resources.md
       - 文档维护: reference/maintenance.md
@@ -110,6 +122,7 @@ nav:
       - OPT101 一手资料核对: research/opt101-primary-sources.md
       - ADS1115 与 NTC100K 一手资料核对: research/ads1115-ntc100k-primary-sources-2026-07-22.md
       - XIAO/工具链文档审查: research/xiao-platform-docs-audit-2026-07-22.md
+      - Waveshare ESP32-C6-LCD-1.47 一手资料核对: research/waveshare-esp32-c6-lcd-1.47-primary-sources-2026-07-25.md
 
 exclude_docs: |
   peripherals/_template.md
