@@ -13,7 +13,7 @@ This directory covers the Waveshare `ESP32-C6-LCD-1.47` (SKU 28563) and the pin-
 |---|---|
 | MCU | ESP32-C6FH4; HP RISC-V core up to 160 MHz and LP core up to 20 MHz |
 | Memory | 4 MB in-package Flash, 512 KB HP SRAM, 16 KB LP SRAM, 320 KB ROM |
-| Radio | 2.4 GHz Wi-Fi 6, Bluetooth 5 LE, IEEE 802.15.4 |
+| Radio | 2.4 GHz Wi-Fi 6, Bluetooth LE (chip certifies BLE 5.3 per Espressif datasheet), IEEE 802.15.4 |
 | Display | 1.47-inch 172×320 262K-color TFT, ST7789 family, 4-wire SPI |
 | Storage | Onboard microSD/TF slot in SPI mode |
 | USB | USB-C connected to ESP32-C6 USB Serial/JTAG |
