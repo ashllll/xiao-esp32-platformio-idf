@@ -13,7 +13,7 @@
 |---|---|---|
 | MCU | ESP32-C6FH4，最高 160 MHz 的 HP RISC-V 核及最高 20 MHz 的 LP RISC-V 核 | Waveshare 产品页、板级原理图、Espressif 数据手册 |
 | 存储 | 4 MB 封装内 Flash；512 KB HP SRAM、16 KB LP SRAM、320 KB ROM | Waveshare 产品页、Espressif 数据手册 |
-| 无线 | 2.4 GHz Wi-Fi 6、Bluetooth 5 LE、IEEE 802.15.4 | Espressif 数据手册；Waveshare 页面未完整列出 802.15.4 |
+| 无线 | 2.4 GHz Wi-Fi 6、Bluetooth LE（芯片认证版本以 Espressif 数据手册为准，当前为 BLE 5.3）、IEEE 802.15.4 | Espressif 数据手册；Waveshare 页面未完整列出 802.15.4 |
 | 显示 | 1.47 英寸 TFT、172×320、262K 色、ST7789 系列、4 线 SPI | Waveshare 页面、LCD 手册、官方示例 |
 | 存储卡 | 板载 microSD/TF 卡槽，SPI 模式 | 原理图、官方示例 |
 | USB | USB Type-C，ESP32-C6 原生 USB Serial/JTAG | 原理图、Espressif 文档 |
