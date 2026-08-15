@@ -32,7 +32,7 @@
 
 - 本仓库现有 `xiao_esp32c6` 环境的板定义和引脚表只适用于 XIAO，不可直接烧录到本板。
 - Waveshare 官方包同时含 Arduino 与原生 ESP-IDF 工程；不能把 Arduino API 复制进本仓库的纯 ESP-IDF 应用。
-- ~~文档已静态核对，但本次没有连接实板~~ **2026-07-25 更新**：已完成 LCD 真机验收（见[故障排查与验收](troubleshooting.md#_4)）。TF 卡、RF 和热行为尚未专项验证。
+- ~~文档已静态核对，但本次没有连接实板~~ **2026-07-25 更新**：已完成 LCD 真机验收（见[故障排查与验收](troubleshooting.md#real-hardware-acceptance)）。TF 卡、RF 和热行为尚未专项验证。
 
 ## 官方入口
 

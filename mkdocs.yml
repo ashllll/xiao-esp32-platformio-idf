@@ -110,6 +110,7 @@ nav:
           - ESP32-C6-LCD-1.47 总览: waveshare/esp32-c6-lcd-1.47/index.md
           - 硬件与引脚: waveshare/esp32-c6-lcd-1.47/hardware.md
           - 开发环境与示例: waveshare/esp32-c6-lcd-1.47/development.md
+          - iKuai 监控示例固件: waveshare/esp32-c6-lcd-1.47/ikuai-monitor-example.md
           - 故障排查与验收: waveshare/esp32-c6-lcd-1.47/troubleshooting.md
   - 参考资料:
       - 资料索引: reference/resources.md

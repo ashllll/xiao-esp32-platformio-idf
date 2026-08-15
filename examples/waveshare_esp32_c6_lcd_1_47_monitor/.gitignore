@@ -1,0 +1,12 @@
+.pio/
+.vscode/
+sdkconfig
+sdkconfig.old
+sdkconfig.*
+*.bin
+*.elf
+*.map
+build/
+src/config.h
+src/ikuai_cert.h
+components/lvgl/
