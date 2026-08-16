@@ -2,6 +2,7 @@
 // 首页只保留 WAN 状态、实时上下行、在线设备、PING 和约 10 秒三色趋势。
 // 每个刷新帧固定左移 1px，并用临界阻尼连续跟随新采样，避免低速走格与折线突变。
 #include "desktop_widget.h"
+#include "crisp_text.h"
 #include "lcd_driver.h"
 #include "ws2812.h"
 #include "config.h"
@@ -225,13 +226,7 @@ static void fmt_rate(uint32_t bps, char *value, int value_cap, const char **unit
 }
 
 static lv_obj_t *mk_label(lv_obj_t *parent, int x, int y, const lv_font_t *f, uint32_t color) {
-    lv_obj_t *l = lv_label_create(parent);
-    lv_obj_set_style_text_font(l, f, 0);
-    lv_obj_set_style_text_color(l, lv_color_hex(color), 0);
-    lv_obj_set_pos(l, x, y);
-    lv_obj_set_style_text_letter_space(l, 0, 0);
-    lv_label_set_text(l, "");
-    return l;
+    return ui_crisp_label_create(parent, x, y, f, color);
 }
 
 static lv_obj_t *mk_block(lv_obj_t *parent, int x, int y, int w, int h, uint32_t color) {

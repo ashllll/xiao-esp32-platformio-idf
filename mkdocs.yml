@@ -76,6 +76,8 @@ plugins:
             硬件与引脚: Hardware and pinout
             开发环境与示例: Development and examples
             故障排查与验收: Troubleshooting and acceptance
+            iKuai 监控示例固件: iKuai monitor example firmware
+            清晰字体与模糊排查: Crisp text and blur troubleshooting
 
 nav:
   - 首页: index.md
@@ -111,6 +113,7 @@ nav:
           - 硬件与引脚: waveshare/esp32-c6-lcd-1.47/hardware.md
           - 开发环境与示例: waveshare/esp32-c6-lcd-1.47/development.md
           - iKuai 监控示例固件: waveshare/esp32-c6-lcd-1.47/ikuai-monitor-example.md
+          - 清晰字体与模糊排查: waveshare/esp32-c6-lcd-1.47/font-rendering.md
           - 故障排查与验收: waveshare/esp32-c6-lcd-1.47/troubleshooting.md
   - 参考资料:
       - 资料索引: reference/resources.md

@@ -3,6 +3,7 @@
 sdkconfig
 sdkconfig.old
 sdkconfig.*
+!sdkconfig.defaults
 *.bin
 *.elf
 *.map

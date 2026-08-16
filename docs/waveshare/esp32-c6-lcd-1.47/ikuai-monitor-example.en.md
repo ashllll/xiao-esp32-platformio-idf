@@ -16,6 +16,10 @@ The prebuilt image runs in **offline demo mode** with synthetic values. It does
 not connect to a network and contains no Wi-Fi password, router address, API
 token, or iKuai certificate.
 
+For fuzzy edges, gray halos, or scaling blur, follow [Crisp text and blur
+troubleshooting](font-rendering.md). It covers native resolution, font bpp,
+label coordinates, RGB565 byte order, and a build-tested LVGL helper.
+
 ## Flash the prebuilt demo
 
 Confirm that the board is the non-touch ST7789 model. Do not flash this image to

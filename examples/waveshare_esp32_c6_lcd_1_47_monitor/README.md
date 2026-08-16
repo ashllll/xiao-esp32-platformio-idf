@@ -4,6 +4,12 @@ This is the privacy-safe source for the 320×172 UniFi-LCM-style iKuai monitor
 demo. It uses ESP-IDF 6.0.1, PlatformIO `espressif32@7.0.1`, LVGL 9.2.2,
 crisp custom bitmap fonts, and a critically damped 30 FPS scrolling curve.
 
+Small-label rendering uses the native-size 12 px/1 bpp font, while the large
+numeric readout uses a 36 px/2 bpp font. The build-tested helper in
+[`src/crisp_text.c`](src/crisp_text.c) keeps labels at integer pixel positions
+with full text opacity and no runtime scaling. See the documentation site's
+“Crisp text and blur troubleshooting” page for the complete checklist.
+
 The public source and prebuilt release contain **no Wi-Fi password, router
 address, API token, or router certificate**. The prebuilt image runs in offline
 demo mode with synthetic data.
@@ -63,3 +69,4 @@ firmware binary. Both private headers are covered by this example's
 配置文件均已加入 `.gitignore`，不要提交个性化固件二进制。
 
 完整烧录说明和发布包见文档站的“iKuai 监控示例固件”页面。
+小屏字体模糊的原因、排查顺序和可复制代码见“清晰字体与模糊排查”页面。
