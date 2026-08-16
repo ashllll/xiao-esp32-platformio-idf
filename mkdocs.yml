@@ -48,6 +48,7 @@ plugins:
             配置与依赖: Configuration and dependencies
             编译与烧录: Build and flash
             固件发布: Firmware releases
+            XIAO S3 PWM 风扇控制器: XIAO S3 PWM fan controller
             外围设备: Peripherals
             集成总览: Integration overview
             ENS160 空气质量传感器: ENS160 air-quality sensor
@@ -93,6 +94,7 @@ nav:
       - 配置与依赖: firmware/configuration.md
       - 编译与烧录: firmware/build-flash.md
       - 固件发布: firmware/release.md
+      - XIAO S3 PWM 风扇控制器: firmware/xiao-s3-pwm-fan-controller.md
   - 外围设备:
       - 集成总览: peripherals/index.md
       - I²C: peripherals/i2c.md
